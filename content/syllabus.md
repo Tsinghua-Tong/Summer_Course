@@ -1,55 +1,61 @@
 # Syllabus · 通用人工智能系统平台I
 
-> **Owner:** All TAs · **Dates:** 2026-07-13 to 2026-07-26 · **Venue:** 通院 2201 大教室
+> **课程名称：** 通用人工智能系统平台I  
+> **开课对象：** 清华通班大一下学生  
+> **授课形式：** 课堂讲授 + 编程练习 + 实践报告  
+> **时间：** 2026年7月13日-7月26日（2周）  
+> **地点：** 通院2201大教室
 
-This site has three modules: the syllabus, the learning list / homework list, and the paper reading
-list. The latter two follow the archive convention of separate files and are intended for TA updates
-through Git commits.
+This syllabus combines the main morning lecture series with the afternoon TA-led practice sessions.
+Morning sessions introduce the broad research landscape of general AI systems; afternoon sessions
+focus on tools, coding homework, paper reading, and practical reports.
 
-## Course Structure
+## Course Rhythm
 
-| Days | Topic | Owner |
+| Time | Content |
+|---|---|
+| Morning | Invited / instructor lecture on one general-AI topic |
+| Afternoon | TA-led practice: GitHub, LaTeX, coding exercise, paper reading, report writing |
+| Evening / after class | Homework, reading, repository submission, report revision |
+
+## Daily Schedule
+
+| Date | Morning lecture | Afternoon TA / practice session |
 |---|---|---|
-| Day 1-2 | Shared foundations: GitHub, Python environment, LaTeX, PyTorch basics | All TAs |
-| Day 3-5 | Foundation models and NLP | 林子雍 |
-| Day 6-8 | Multimodal and vision | 巫莹莹 |
-| Day 9-11 | Embodied AI and robotics | 李炯烨 + 巫莹莹 |
-| Day 12-13 | Agent systems and multi-agent learning | 陈子昂 |
-| Day 14 | Report submission and project presentation | All TAs |
+| 7/13 Mon | **计算机视觉** · 陈以新 | Course setup: GitHub workflow, Python environment, Jupyter / Colab, repository submission rule |
+| 7/14 Tue | **社会智能和心智理论** · 范丽凤 | LaTeX and academic writing: CV task, report template, email etiquette, reading-report format |
+| 7/15 Wed | **认知机器人** · 张泽宇 | Foundations for coding exercises: PyTorch basics, tensors/autograd, notebook reproducibility |
+| 7/16 Thu | **多模态具身智能** · 钟亦武（北大） | NLP / foundation-model practice: tokenization, sampling, CS224N / CS336-style notebook |
+| 7/17 Fri | **多智能体社会模拟** · 毕铭杰、赵雨涵 | LLM application practice: prompting, RAG, tool use, small model demo |
+| 7/18 Sat | No regular morning lecture | Self-study / catch-up: finish setup tasks and LaTeX CV |
+| 7/19 Sun | No regular morning lecture | Self-study / reading: choose reading-report paper and direction homework |
+| 7/20 Mon | **通用人工智能标准、评级与测试** · 王愉茜、张振亮 | Vision practice: CS131 / CS231n-style image-classification homework |
+| 7/21 Tue | **水冰汽前沿理论——可解释人工智能** · 郑子隆、贾子夏 | Multimodal practice: CLIP / VLM / SAM demo and error analysis |
+| 7/22 Wed | **水冰汽应用与实践** · 张驰（北大） | Robotics practice: Modern Robotics Ex. 2.1-2.9, URDF, PyBullet / simulator setup |
+| 7/23 Thu | **TongSim介绍及教程** · 符传坚、袁滔 | Embodied-AI practice: simulator rollout, control/RL demo, video or screenshot submission |
+| 7/24 Fri | **AI赋能工程与科学的案例分享** · 朱毅鑫（北大） | Agent systems practice: PettingZoo / MARL baseline, ReAct or multi-agent LLM demo |
+| 7/25 Sat | **朱松纯老师报告**（与通计划开营合并） | Report clinic and final presentation preparation |
+| 7/26 Sun | Course wrap-up / no regular morning lecture | Final submission buffer: practical report, reading report, repository cleanup |
 
-## Daily Plan
+## Afternoon Practice Blocks
 
-### Week 1
-
-- **Day 1: GitHub and development workflow.** Repository setup, branches, pull requests, environment
-  management, VS Code / Jupyter.
-- **Day 2: LaTeX and deep-learning basics.** LaTeX CV task, PyTorch tensor/autograd recap, notebook
-  submission convention.
-- **Day 3: Language modeling basics.** Tokenization, embeddings, attention, decoder-only Transformer.
-- **Day 4: Training and adaptation.** Pretraining intuition, scaling laws, instruction tuning, LoRA.
-- **Day 5: Using LLMs.** Prompting, retrieval-augmented generation, tool use, evaluation.
-
-### Week 2
-
-- **Day 6: Vision foundations.** Image classification, CNNs, ResNet, Vision Transformer.
-- **Day 7: Representation and generation.** CLIP / DINO-style representation learning, diffusion.
-- **Day 8: Multimodal systems.** VLMs, segmentation, 3D / video topics.
-- **Day 9: Robotics foundations.** Degrees of freedom, configuration space, URDF.
-- **Day 10: Simulation and control.** MuJoCo / PyBullet / Isaac-style simulation, PPO basics.
-- **Day 11: Robot learning.** Imitation learning, diffusion policy, VLA models.
-- **Day 12: Multi-agent learning.** MARL environments, cooperation and competition, PettingZoo.
-- **Day 13: LLM agents.** ReAct, tool use, planning, multi-agent LLM collaboration.
-- **Day 14: Final session.** Reading report / practical report submission and short presentation.
+| Block | Main content | Related list |
+|---|---|---|
+| Shared foundations | GitHub, Python environment, Jupyter, LaTeX CV, academic writing | Learning List / Homework |
+| Foundation models and NLP | CS224N Assignment 1 style task, CS336-style language-model pipeline, sampling / LoRA / RAG | Learning List / Paper Reading List |
+| Multimodal and vision | CS131 / CS231n-style vision homework, CIFAR-10 classifier, CLIP / VLM / SAM demo | Learning List / Paper Reading List |
+| Embodied AI and robotics | Modern Robotics exercises, URDF, PyBullet / MuJoCo rollout, optional PPO demo | Learning List / Paper Reading List |
+| Agent systems and multi-agent | Theory-of-Mind report, PettingZoo environments, MARL baseline, ReAct / multi-agent LLM demo | Learning List / Paper Reading List |
 
 ## Deliverables
 
 1. **Foundational tasks:** GitHub workflow, environment check notebook, and LaTeX CV.
 2. **Programming homework:** at least one direction-specific assignment from the learning list.
 3. **Reading report:** a 2-4 page LaTeX report based on the paper reading list.
-4. **Presentation:** a short final presentation on a selected homework, reproduction, or extension.
+4. **Practical report / presentation:** a short final presentation or written practical report on a selected homework, reproduction, or extension.
 
 ## TA Update Rule
 
 - Edit `content/learning-list.md` for learning resources, homework, notebooks, and starter repos.
 - Edit `content/paper-reading-list.md` for required/optional papers and reading-report topics.
-- Keep direction-specific edits inside the TA editing area for that direction.
+- Keep direction-specific instructions under the corresponding direction heading.
