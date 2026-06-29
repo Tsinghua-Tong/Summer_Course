@@ -48,6 +48,7 @@ current course.
 
 ### Learning Resources
 
+- NLP API reference: [Hugging Face Transformers documentation](https://huggingface.co/docs/transformers).
 - Practical library path: [Hugging Face LLM Course](https://huggingface.co/learn/llm-course).
 - University course path: [Stanford CS224N](https://web.stanford.edu/class/cs224n/) and
   [Stanford CS336: Language Modeling from Scratch](https://stanford-cs336.github.io/spring2024/).
@@ -61,10 +62,20 @@ current course.
    [CS336 Assignment 1: Basics](https://github.com/stanford-cs336/spring2024-assignment1-basics)
    as the reference form. Implement or inspect the core parts of a small language model pipeline:
    tokenizer, model, optimizer, sampling, and training/evaluation loop.
-3. **Course version.** Load a small open language model with `transformers`, inspect tokenization,
-   implement greedy/top-k/temperature sampling, and compare outputs.
-4. **Optional extension.** LoRA fine-tune a small instruction model on a tiny dataset and report
-   before/after generations.
+3. **Course version: NLP tasks with Transformers.** Use the Hugging Face `transformers` library
+   to complete the following three practices in one or more reproducible notebooks:
+   - **Token classification:** fine-tune a Transformer for part-of-speech tagging or named entity
+     recognition, following the [token classification tutorial](https://huggingface.co/docs/transformers/tasks/token_classification).
+   - **Text classification:** fine-tune a Transformer for a sentence- or document-level
+     classification task, following the [text classification tutorial](https://huggingface.co/docs/transformers/tasks/sequence_classification).
+   - **Text generation:** load a small causal language model and compare greedy, sampling,
+     top-k, top-p, and temperature-based decoding with the
+     [text generation tutorial](https://huggingface.co/docs/transformers/generation_strategies).
+4. **Optional extension.** Choose one topic from **Direction A · Foundation Models and NLP** in
+   the [Paper Reading List](#paper-reading-list), implement a small-scale experiment, and present
+   the problem, method, experimental setup, results, limitations, and possible improvements. The
+   suggested report themes and reproduction tasks under each reading-list subsection can be used
+   as project references.
 
 ## Direction B · Multimodal and Vision
 

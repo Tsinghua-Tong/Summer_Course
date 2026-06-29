@@ -40,26 +40,55 @@ Every listed paper has a direct link. Prefer the **Required** papers for reading
 
 ## Direction A · Foundation Models and NLP
 
-> **林子雍请修改补充这里：** finalize which papers are required, add any newer LLM papers, and add
-> suggested report topics / reproduction tasks.
+This direction connects the development of pretrained language models with their use in language understanding, generation, efficient adaptation, alignment, retrieval, and reasoning. The list is ordered by conceptual dependency within each subsection rather than by publication date alone.
 
 ### Required
 
-- Brown et al., 2020, [**Language Models are Few-Shot Learners**](https://arxiv.org/abs/2005.14165).
-- Hoffmann et al., 2022, [**Training Compute-Optimal Large Language Models**](https://arxiv.org/abs/2203.15556).
-- Ouyang et al., 2022, [**Training language models to follow instructions with human feedback**](https://arxiv.org/abs/2203.02155).
-- Wei et al., 2022, [**Chain-of-Thought Prompting Elicits Reasoning in Large Language Models**](https://arxiv.org/abs/2201.11903).
-- Lewis et al., 2020, [**Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks**](https://arxiv.org/abs/2005.11401).
-- Rafailov et al., 2023, [**Direct Preference Optimization**](https://arxiv.org/abs/2305.18290).
-- Schick et al., 2023, [**Toolformer**](https://arxiv.org/abs/2302.04761).
-- Dubey et al., 2024, [**The Llama 3 Herd of Models**](https://arxiv.org/abs/2407.21783).
+These papers trace the shift from contextual word representations to the three main Transformer paradigms: encoder-only understanding, decoder-only generation, and encoder-decoder text-to-text modeling. 
+**Suggested report themes:** compare their pretraining objectives, attention masks, representations, and downstream interfaces. 
+
+- Peters et al., 2018, [**Deep Contextualized Word Representations**](https://aclanthology.org/N18-1202/) (ELMo: contextualized token representations).
+- Devlin et al., 2019, [**BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding**](https://aclanthology.org/N19-1423/) (encoder-only masked language modeling).
+- Radford et al., 2019, [**Language Models are Unsupervised Multitask Learners**](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) (GPT-2: decoder-only language modeling and zero-shot transfer).
+- Raffel et al., 2020, [**Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer**](https://www.jmlr.org/papers/v21/20-074.html) (T5: unifying NLU and NLG as text-to-text tasks).
 
 ### Optional
 
-- Bengio et al., 2003, [**A Neural Probabilistic Language Model**](https://www.jmlr.org/papers/v3/bengio03a.html).
-- Sutskever et al., 2014, [**Sequence to Sequence Learning with Neural Networks**](https://arxiv.org/abs/1409.3215).
-- Wang et al., 2022, [**Self-Instruct: Aligning Language Models with Self-Generated Instructions**](https://arxiv.org/abs/2212.10560).
-- DeepSeek-AI, 2025, [**DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning**](https://arxiv.org/abs/2501.12948).
+#### Text classification and representation learning
+
+This route studies how pretrained Transformers support token-level prediction, sentence classification, and dense sentence representations. 
+**Suggested report themes:** compare a linear-softmax head with a CRF decoder, analyze the effects of RoBERTa's pretraining choices, or compare supervised and unsupervised sentence-embedding objectives. 
+**Reproduction tasks:** run BERT-based slot filling or NER with softmax and CRF heads on the same split, or evaluate Sentence-BERT and SimCSE on semantic textual similarity and retrieval with the same metric.
+
+- Chen, Zhuo, and Wang, 2019, [**BERT for Joint Intent Classification and Slot Filling**](https://arxiv.org/abs/1902.10909) (a Transformer encoder with a linear-softmax, or conditional maximum-entropy, head for token-level slot labeling).
+- Souza, Nogueira, and Lotufo, 2019, [**Portuguese Named Entity Recognition using BERT-CRF**](https://arxiv.org/abs/1909.10649) (a Transformer encoder with a linear-chain CRF decoding layer for token-level NER).
+- Liu et al., 2019, [**RoBERTa: A Robustly Optimized BERT Pretraining Approach**](https://arxiv.org/abs/1907.11692) (pretraining choices and ablation).
+- Reimers and Gurevych, 2019, [**Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks**](https://aclanthology.org/D19-1410/) (sentence representation and retrieval).
+- Gao et al., 2021, [**SimCSE: Simple Contrastive Learning of Sentence Embeddings**](https://aclanthology.org/2021.emnlp-main.552/) (contrastive sentence representation learning).
+
+#### Scaling, adaptation, and alignment
+
+This route asks how model capability changes with scale, how pretrained models can be adapted efficiently, and how their behavior can be aligned with human instructions and preferences.
+**Suggested report themes:** contrast parameter scaling with data scaling, full fine-tuning with LoRA, or RLHF with DPO. 
+**Reproduction tasks:** measure zero-/one-/few-shot sensitivity across at least three prompt variants, ablate LoRA rank or training-set size, or compare supervised fine-tuning and DPO using the same compact base model and evaluation set.
+
+- Brown et al., 2020, [**Language Models are Few-Shot Learners**](https://arxiv.org/abs/2005.14165) (in-context learning at scale).
+- Hoffmann et al., 2022, [**Training Compute-Optimal Large Language Models**](https://arxiv.org/abs/2203.15556) (scaling laws and compute/data trade-offs).
+- Hu et al., 2021, [**LoRA: Low-Rank Adaptation of Large Language Models**](https://arxiv.org/abs/2106.09685) (parameter-efficient fine-tuning).
+- Ouyang et al., 2022, [**Training Language Models to Follow Instructions with Human Feedback**](https://arxiv.org/abs/2203.02155) (instruction tuning and RLHF).
+- Rafailov et al., 2023, [**Direct Preference Optimization: Your Language Model is Secretly a Reward Model**](https://arxiv.org/abs/2305.18290) (preference learning without an explicit reward model).
+
+#### Reasoning, retrieval, and tool use
+
+This route studies how language models access external knowledge, expose or sample intermediate reasoning steps, call tools, and acquire reasoning behavior through reinforcement learning.
+**Suggested report themes:** separate retrieval failures from generation failures, compare chain-of-thought with self-consistency, or contrast prompted, tool-augmented, and RL-trained reasoning. 
+**Reproduction tasks:** build a compact RAG pipeline and report retrieval recall and answer accuracy separately, or compare direct answering，chain-of-thought, and self-consistency on a fixed subset of a reasoning benchmark with several random seeds.
+
+- Lewis et al., 2020, [**Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks**](https://arxiv.org/abs/2005.11401) (retrieval with parametric and non-parametric memory).
+- Wei et al., 2022, [**Chain-of-Thought Prompting Elicits Reasoning in Large Language Models**](https://arxiv.org/abs/2201.11903) (eliciting intermediate reasoning steps with demonstrations).
+- Wang et al., 2022, [**Self-Consistency Improves Chain of Thought Reasoning in Language Models**](https://arxiv.org/abs/2203.11171) (sampling multiple reasoning paths).
+- Schick et al., 2023, [**Toolformer: Language Models Can Teach Themselves to Use Tools**](https://arxiv.org/abs/2302.04761) (self-supervised tool use).
+- DeepSeek-AI, 2025, [**DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning**](https://arxiv.org/abs/2501.12948) (reinforcement learning for reasoning).
 
 ## Direction B · Multimodal and Vision
 
