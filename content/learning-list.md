@@ -123,15 +123,34 @@ current course.
   [PettingZoo RLlib tutorials](https://pettingzoo.farama.org/tutorials/rllib/index.html).
 - LLM agent frameworks: [AutoGen](https://microsoft.github.io/autogen/) or
   [LangGraph](https://langchain-ai.github.io/langgraph/).
+- Agent benchmarks and examples: [AgentBench](https://arxiv.org/abs/2308.03688),
+  [WebArena](https://arxiv.org/abs/2307.13854), [OSWorld](https://arxiv.org/abs/2404.07972),
+  [SWE-agent](https://arxiv.org/abs/2405.15793), and
+  [Magentic-One](https://arxiv.org/abs/2411.04468).
 
 ### Homework
 
-1. **Archive homework: Theory-of-Mind report.** Submit a LaTeX report summarizing
-   [*Planning with Theory of Mind*](https://doi.org/10.1016/j.tics.2022.08.003). Include related
-   work, background, method, experiment results, and future improvement; focus on method and future
-   improvement.
-2. **Archive homework: RL/MARL reading.** Complete selected UCL RL lectures, study the first two
-   game-theory lectures, and read one paper from each direction in a MARL paper collection.
-3. **Course version.** Run one cooperative and one competitive PettingZoo environment, implement a
-   random or scripted baseline, and report observations about coordination or competition.
-4. **Optional extension.** Build a small ReAct-style tool-using LLM agent with at least two tools.
+1. **Reference assignment: AgentBench / WebArena style task analysis.** Read one benchmark paper
+   from the agent section of the [Paper Reading List](#paper-reading-list), then choose 5 tasks from
+   its released examples or task descriptions. For each task, identify the goal, observation space,
+   available actions/tools, success metric, and the main reason an agent might fail.
+2. **Reference assignment: PettingZoo multi-agent baseline.** Use the
+   [PettingZoo tutorials](https://pettingzoo.farama.org/tutorials/) as the reference form. Run one
+   cooperative environment and one competitive environment, implement a random or scripted baseline,
+   log per-agent rewards, and write a short comparison of cooperation, competition, and credit
+   assignment.
+3. **Course version: LLM agent and MAS tasks.** Use AutoGen, LangGraph, or a minimal Python
+   implementation to complete the following three practices in reproducible notebooks or scripts:
+   - **Tool-using single agent:** build a ReAct-style loop that can call at least two tools, such as
+     a calculator, Python execution, local file search, or a course-material lookup function. Report
+     a trace for at least 5 tasks and classify failures as planning, tool-use, observation, or
+     final-answer errors.
+   - **Multi-agent collaboration:** build a small two- or three-role system, such as
+     planner/executor/critic or solver/reviewer. Evaluate it on the same 5 tasks as a single-agent
+     baseline and compare success rate, cost, number of turns, and typical failure modes.
+   - **Agent evaluation:** define a simple rubric or executable checker for your tasks. Run at least
+     3 repeated trials per setting and report consistency, not only best-case performance.
+4. **Optional extension.** Choose one recent paper from **Direction D · Agent Systems and
+   Multi-Agent** in the [Paper Reading List](#paper-reading-list), reproduce a small component
+   such as memory, reflection, planning/re-planning, debate, or tool-use reliability, and present the
+   problem, method, experimental setup, results, limitations, and possible improvements.

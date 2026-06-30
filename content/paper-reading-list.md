@@ -134,21 +134,29 @@ This direction traces visual representation and generation: from convolutional a
 
 ## Direction D · Agent Systems and Multi-Agent
 
+This direction focuses on LLM agents that plan, use tools, interact with web or desktop
+environments, and coordinate in multi-agent systems, while keeping one practical MARL baseline for
+the reinforcement-learning side. The list emphasizes recent benchmarks and system papers because
+agent capability is best understood through executable tasks, failure modes, and evaluation design.
+
 ### Required
 
-- Littman, 1994, [**Markov Games as a Framework for Multi-Agent Reinforcement Learning**](https://www2.cs.duke.edu/courses/spring07/cps296.3/littman94markov.pdf).
-- Lowe et al., 2017, [**Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments**](https://arxiv.org/abs/1706.02275).
-- Leibo et al., 2017, [**Multi-Agent Reinforcement Learning in Sequential Social Dilemmas**](https://arxiv.org/abs/1702.03037).
-- Yang and Wang, 2020, [**An Overview of Multi-Agent Reinforcement Learning from a Game-Theoretical Perspective**](https://arxiv.org/abs/2011.00583).
-- Mordatch and Abbeel, 2018, [**Emergence of Grounded Compositional Language in Multi-Agent Populations**](https://arxiv.org/abs/1703.04908).
-- Yao et al., 2023, [**ReAct: Synergizing Reasoning and Acting in Language Models**](https://arxiv.org/abs/2210.03629).
-- Wu et al., 2023, [**AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation**](https://arxiv.org/abs/2308.08155).
-- Ho, Saxe, and Cushman, 2022, [**Planning with Theory of Mind**](https://doi.org/10.1016/j.tics.2022.08.003).
+- Yao et al., 2023, [**ReAct: Synergizing Reasoning and Acting in Language Models**](https://arxiv.org/abs/2210.03629) (the core reason-act-observe loop for tool-using agents).
+- Liu et al., 2023, [**AgentBench: Evaluating LLMs as Agents**](https://arxiv.org/abs/2308.03688) (multi-environment benchmark for agent reasoning and decision making).
+- Zhou et al., 2023, [**WebArena: A Realistic Web Environment for Building Autonomous Agents**](https://arxiv.org/abs/2307.13854) (web task benchmark with executable success criteria).
+- Xie et al., 2024, [**OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments**](https://arxiv.org/abs/2404.07972) (desktop and GUI agent evaluation).
+- Yang et al., 2024, [**SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering**](https://arxiv.org/abs/2405.15793) (agent-computer interface design for code agents).
+- Yao et al., 2024, [**tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains**](https://arxiv.org/abs/2406.12045) (tool use, policy following, and reliability over repeated trials).
+- Fourney et al., 2024, [**Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks**](https://arxiv.org/abs/2411.04468) (orchestrated multi-agent system with planning and re-planning).
+- Yu et al., 2021, [**The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games**](https://arxiv.org/abs/2103.01955) (practical MARL baseline and implementation lessons).
 
 ### Optional
 
-- Nowak, 2006, [**Five Rules for the Evolution of Cooperation**](https://doi.org/10.1126/science.1133755).
-- Shinn et al., 2023, [**Reflexion: Language Agents with Verbal Reinforcement Learning**](https://arxiv.org/abs/2303.11366).
-- Park et al., 2023, [**Generative Agents: Interactive Simulacra of Human Behavior**](https://arxiv.org/abs/2304.03442).
-- Wang et al., 2023, [**Voyager: An Open-Ended Embodied Agent with Large Language Models**](https://arxiv.org/abs/2305.16291).
-- Rabinowitz et al., 2018, [**Machine Theory of Mind**](https://proceedings.mlr.press/v80/rabinowitz18a.html).
+- Shinn et al., 2023, [**Reflexion: Language Agents with Verbal Reinforcement Learning**](https://arxiv.org/abs/2303.11366) (reflection and episodic memory without weight updates).
+- Park et al., 2023, [**Generative Agents: Interactive Simulacra of Human Behavior**](https://arxiv.org/abs/2304.03442) (memory, reflection, planning, and emergent social behavior).
+- Wu et al., 2023, [**AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation**](https://arxiv.org/abs/2308.08155) (programmable multi-agent conversation framework).
+- Hong et al., 2023, [**MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework**](https://arxiv.org/abs/2308.00352) (role specialization and SOP-style collaboration).
+- Qian et al., 2023, [**ChatDev: Communicative Agents for Software Development**](https://arxiv.org/abs/2307.07924) (software-development workflow with communicating agents).
+- Wang et al., 2023, [**Voyager: An Open-Ended Embodied Agent with Large Language Models**](https://arxiv.org/abs/2305.16291) (lifelong skill discovery in an embodied environment).
+- Lowe et al., 2017, [**Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments**](https://arxiv.org/abs/1706.02275) (historical deep MARL baseline).
+- Ho, Saxe, and Cushman, 2022, [**Planning with Theory of Mind**](https://doi.org/10.1016/j.tics.2022.08.003) (reasoning about other agents' beliefs and goals).

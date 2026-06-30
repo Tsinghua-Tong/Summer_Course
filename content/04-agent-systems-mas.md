@@ -19,7 +19,7 @@ tool-using agent yourself.
 4. Game theory — a short course such as [Game Theory (Stanford/Coursera)](https://www.coursera.org/learn/game-theory-1) for Nash equilibria and mechanism design. *(Intermediate)*
 
 **LLM agents** *(Intermediate → Advanced)*
-5. Read the LLM-agent literature below (ReAct → Reflexion → Generative Agents → AutoGen) and a
+5. Read the LLM-agent literature below (ReAct → WebArena / OSWorld → SWE-agent / tau-bench → Magentic-One) and a
    framework's docs ([AutoGen](https://microsoft.github.io/autogen/) or
    [LangGraph](https://langchain-ai.github.io/langgraph/)).
 
@@ -33,33 +33,38 @@ tool-using agent yourself.
 
 ## Programming Exercises
 
-1. **Multi-agent environment.** Use [PettingZoo](https://pettingzoo.farama.org/) to run a cooperative
-   and a competitive multi-agent environment; train or script simple policies and observe the dynamics.
-2. **Build a ReAct agent.** Implement a tool-using LLM agent (reasoning + actions) that can call at
-   least two tools (e.g. a calculator and web/search or a Python REPL) to solve multi-step questions.
-3. **Multi-agent collaboration.** Set up a small multi-agent system (e.g. a "solver + critic" debate,
-   or [AutoGen](https://microsoft.github.io/autogen/) / [CAMEL](https://www.camel-ai.org/) roles) and
-   measure whether collaboration beats a single agent on a task.
-4. **Report.** Summarize *Planning with Theory of Mind* (or another reading-list paper) — related work,
-   background, method, experiments, and future improvement (focus on method + improvement).
+1. **Benchmark task analysis.** Read one agent benchmark paper (AgentBench, WebArena, OSWorld, or
+   tau-bench), choose 5 released tasks or task descriptions, and write down the goal, observation
+   space, available actions/tools, success metric, and likely failure modes.
+2. **PettingZoo baseline.** Run one cooperative and one competitive PettingZoo environment, implement
+   a random or scripted baseline, log per-agent rewards, and compare cooperation, competition, and
+   credit assignment.
+3. **Course version: LLM agent and MAS tasks.** Build a ReAct-style single agent with at least two
+   tools, then build a two- or three-role multi-agent variant such as planner/executor/critic.
+   Evaluate both on the same 5 tasks, with at least 3 repeated trials per setting, and compare
+   success rate, cost, number of turns, consistency, and failure modes.
+4. **Optional extension.** Reproduce a small component from a recent paper, such as reflection,
+   memory, planning/re-planning, debate, or tool-use reliability.
 
 ## Paper Reading
 
 **Multi-agent RL & game theory**
-1. **Lowe et al. (2017), "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments (MADDPG)."** Foundational deep MARL.
-2. **Yang & Wang (2020), "An Overview of Multi-Agent Reinforcement Learning from a Game-Theoretical Perspective."** A clear survey/bridge.
-3. **Nowak (2006), "Five Rules for the Evolution of Cooperation."** Why cooperation can emerge at all.
+1. **Yu et al. (2021), "The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games."** A practical MARL baseline and implementation guide.
+2. **Lowe et al. (2017), "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments (MADDPG)."** Historical deep MARL baseline.
 
 **LLM agents**
-4. **Yao et al. (2023), "ReAct: Synergizing Reasoning and Acting in Language Models."** The core agent loop.
-5. **Shinn et al. (2023), "Reflexion: Language Agents with Verbal Reinforcement Learning."** Self-reflection as feedback.
-6. **Park et al. (2023), "Generative Agents: Interactive Simulacra of Human Behavior."** A society of LLM agents ("Smallville").
-7. **Wang et al. (2023), "Voyager: An Open-Ended Embodied Agent with LLMs."** Lifelong skill learning in Minecraft.
-8. **Wu et al. (2023), "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation."** A practical multi-agent framework.
+3. **Yao et al. (2023), "ReAct: Synergizing Reasoning and Acting in Language Models."** The core agent loop.
+4. **Liu et al. (2023), "AgentBench: Evaluating LLMs as Agents."** Multi-environment agent benchmark.
+5. **Zhou et al. (2023), "WebArena: A Realistic Web Environment for Building Autonomous Agents."** Web task benchmark.
+6. **Xie et al. (2024), "OSWorld."** Desktop and GUI agent evaluation.
+7. **Yang et al. (2024), "SWE-agent."** Agent-computer interfaces for code agents.
+8. **Yao et al. (2024), "tau-bench."** Tool-agent-user interaction and repeated-trial reliability.
 
-**Theory of mind & planning**
-9. **"Planning with Theory of Mind."** Reasoning about other agents' beliefs and goals to plan (course core reading).
-10. **Rabinowitz et al. (2018), "Machine Theory of Mind."** Learning to model other agents.
+**Multi-agent LLM systems**
+9. **Wu et al. (2023), "AutoGen."** Programmable multi-agent conversation framework.
+10. **Hong et al. (2023), "MetaGPT."** Role specialization and SOP-style collaboration.
+11. **Fourney et al. (2024), "Magentic-One."** Generalist orchestrated multi-agent system.
+12. **Shinn et al. (2023), "Reflexion."** Reflection and episodic memory without weight updates.
 
 > Conferences to follow: **AAMAS, NeurIPS, ICML, ICLR, AAAI**. For LLM agents, watch
 > [arXiv (cs.AI / cs.MA)](https://arxiv.org/list/cs.MA/recent) closely — the field moves monthly.
