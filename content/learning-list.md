@@ -130,27 +130,66 @@ current course.
 
 ### Homework
 
-1. **Reference assignment: AgentBench / WebArena style task analysis.** Read one benchmark paper
-   from the agent section of the [Paper Reading List](#paper-reading-list), then choose 5 tasks from
-   its released examples or task descriptions. For each task, identify the goal, observation space,
-   available actions/tools, success metric, and the main reason an agent might fail.
-2. **Reference assignment: PettingZoo multi-agent baseline.** Use the
-   [PettingZoo tutorials](https://pettingzoo.farama.org/tutorials/) as the reference form. Run one
-   cooperative environment and one competitive environment, implement a random or scripted baseline,
-   log per-agent rewards, and write a short comparison of cooperation, competition, and credit
-   assignment.
-3. **Course version: LLM agent and MAS tasks.** Use AutoGen, LangGraph, or a minimal Python
-   implementation to complete the following three practices in reproducible notebooks or scripts:
-   - **Tool-using single agent:** build a ReAct-style loop that can call at least two tools, such as
-     a calculator, Python execution, local file search, or a course-material lookup function. Report
-     a trace for at least 5 tasks and classify failures as planning, tool-use, observation, or
-     final-answer errors.
-   - **Multi-agent collaboration:** build a small two- or three-role system, such as
-     planner/executor/critic or solver/reviewer. Evaluate it on the same 5 tasks as a single-agent
-     baseline and compare success rate, cost, number of turns, and typical failure modes.
-   - **Agent evaluation:** define a simple rubric or executable checker for your tasks. Run at least
-     3 repeated trials per setting and report consistency, not only best-case performance.
-4. **Optional extension.** Choose one recent paper from **Direction D · Agent Systems and
-   Multi-Agent** in the [Paper Reading List](#paper-reading-list), reproduce a small component
-   such as memory, reflection, planning/re-planning, debate, or tool-use reliability, and present the
-   problem, method, experimental setup, results, limitations, and possible improvements.
+Complete one small project: **Mini Agent Benchmark for Course QA**. Submit a folder or repository
+named `mas_agent_homework_<student_id>` with the following files:
+
+```text
+README.md
+requirements.txt
+tasks.jsonl
+tools.py
+single_agent.py
+multi_agent.py
+run_eval.py
+results.csv
+logs/
+report.md or report.pdf
+```
+
+#### Task Set
+
+Create `tasks.jsonl` with exactly these 5 tasks. Each line should contain `id`, `question`, and
+`answer`.
+
+1. `course_date`: Find the date of the **TongSim** lecture and the afternoon practice topic on that
+   day.
+2. `mas_required_2024`: In the paper reading list, count how many **required Direction D** papers are
+   from 2024 or later, and list their titles.
+3. `calculator`: Compute `((13 + 26) * 4 - 17) / 5` and give the exact result.
+4. `agent_benchmarks`: Name two required Direction D papers that evaluate agents in web, desktop,
+   software-engineering, or tool-use environments, and state the environment each one focuses on.
+5. `study_plan`: Make a 2-day plan for finishing this homework. Day 1 has 6 hours, Day 2 has 4
+   hours, PettingZoo must be done before agent evaluation, and the total time must add up to 10
+   hours.
+
+#### Code Requirements
+
+1. Implement at least two tools in `tools.py`:
+   - `calculator(expression: str) -> str`
+   - `course_search(query: str) -> str`, which searches the course Markdown files or the course
+     HTML.
+2. Implement `single_agent.py`: one ReAct-style agent that solves all 5 tasks. For every task, save a
+   JSON trace under `logs/single/` showing thoughts or plans, tool calls, observations, and final
+   answer.
+3. Implement `multi_agent.py`: a three-role system with **planner**, **executor**, and **reviewer**.
+   It should solve the same 5 tasks and save traces under `logs/multi/`.
+4. Implement `run_eval.py`: run both systems on all 5 tasks for 3 trials each. Write `results.csv`
+   with columns `task_id, system, trial, success, num_turns, num_tool_calls, notes`.
+5. Optional but recommended: run one PettingZoo cooperative environment and one competitive
+   environment for 10 episodes each, then include average rewards in the report. This is extra
+   credit, not required for the main homework.
+
+#### Report Requirements
+
+Write a 2-3 page report with these sections:
+
+1. **Setup:** model/API or local model used, tools implemented, and how to run the code.
+2. **Single-agent result:** success rate, common failures, and one example trace.
+3. **Multi-agent result:** success rate, common failures, and one example trace.
+4. **Comparison:** which system worked better, whether the reviewer helped, and whether the extra
+   turns/cost were worth it.
+5. **Failure analysis:** classify failures into planning error, tool-use error, retrieval error,
+   arithmetic error, or final-answer formatting error.
+
+The homework is considered complete if `python run_eval.py` runs successfully and produces
+`results.csv` plus the required trace files.

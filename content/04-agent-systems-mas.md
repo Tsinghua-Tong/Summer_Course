@@ -33,18 +33,50 @@ tool-using agent yourself.
 
 ## Programming Exercises
 
-1. **Benchmark task analysis.** Read one agent benchmark paper (AgentBench, WebArena, OSWorld, or
-   tau-bench), choose 5 released tasks or task descriptions, and write down the goal, observation
-   space, available actions/tools, success metric, and likely failure modes.
-2. **PettingZoo baseline.** Run one cooperative and one competitive PettingZoo environment, implement
-   a random or scripted baseline, log per-agent rewards, and compare cooperation, competition, and
-   credit assignment.
-3. **Course version: LLM agent and MAS tasks.** Build a ReAct-style single agent with at least two
-   tools, then build a two- or three-role multi-agent variant such as planner/executor/critic.
-   Evaluate both on the same 5 tasks, with at least 3 repeated trials per setting, and compare
-   success rate, cost, number of turns, consistency, and failure modes.
-4. **Optional extension.** Reproduce a small component from a recent paper, such as reflection,
-   memory, planning/re-planning, debate, or tool-use reliability.
+Complete one small project: **Mini Agent Benchmark for Course QA**.
+
+Submit a folder or repository named `mas_agent_homework_<student_id>` with:
+
+```text
+README.md
+requirements.txt
+tasks.jsonl
+tools.py
+single_agent.py
+multi_agent.py
+run_eval.py
+results.csv
+logs/
+report.md or report.pdf
+```
+
+### Fixed Tasks
+
+Create `tasks.jsonl` with exactly these 5 tasks.
+
+1. Find the date of the **TongSim** lecture and the afternoon practice topic on that day.
+2. Count how many **required Direction D** papers are from 2024 or later, and list their titles.
+3. Compute `((13 + 26) * 4 - 17) / 5`.
+4. Name two required Direction D papers that evaluate agents in web, desktop,
+   software-engineering, or tool-use environments, and state the environment each one focuses on.
+5. Make a 2-day plan for finishing this homework: Day 1 has 6 hours, Day 2 has 4 hours, PettingZoo
+   must be done before agent evaluation, and the total time must add up to 10 hours.
+
+### Required Implementation
+
+1. Implement `calculator(expression: str) -> str` and `course_search(query: str) -> str` in
+   `tools.py`.
+2. Implement a ReAct-style single agent in `single_agent.py`; save one JSON trace per task under
+   `logs/single/`.
+3. Implement a three-role **planner / executor / reviewer** system in `multi_agent.py`; save one JSON
+   trace per task under `logs/multi/`.
+4. Implement `run_eval.py`; run both systems on all 5 tasks for 3 trials each and write
+   `results.csv` with `task_id, system, trial, success, num_turns, num_tool_calls, notes`.
+5. Write a 2-3 page report comparing single-agent and multi-agent success rate, traces, failure
+   types, and whether the reviewer was worth the extra turns.
+
+Optional extra credit: run one PettingZoo cooperative environment and one competitive environment
+for 10 episodes each, and include average rewards in the report.
 
 ## Paper Reading
 

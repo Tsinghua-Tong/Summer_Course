@@ -45,7 +45,7 @@ focus on tools, coding homework, paper reading, and practical reports.
 | Foundation models and NLP | CS224N Assignment 1 style task, CS336-style language-model pipeline, sampling / LoRA / RAG | Learning List / Paper Reading List |
 | Multimodal and vision | CS131 / CS231n-style vision homework, CIFAR-10 classifier, CLIP / VLM / SAM demo | Learning List / Paper Reading List |
 | Embodied AI and robotics | Modern Robotics exercises, URDF, PyBullet / MuJoCo rollout, optional PPO demo | Learning List / Paper Reading List |
-| Agent systems and multi-agent | Agent benchmark analysis, PettingZoo baseline, tool-use agent and multi-agent evaluation | Learning List / Paper Reading List |
+| Agent systems and multi-agent | Mini Agent Benchmark: course QA tasks, single-agent baseline, planner/executor/reviewer comparison | Learning List / Paper Reading List |
 
 ## Deliverables
 
