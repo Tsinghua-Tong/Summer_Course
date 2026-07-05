@@ -1,6 +1,6 @@
-# Learning List / Homework · 通用人工智能系统平台I
+# Learning Resource / Homework · 通用人工智能系统平台I
 
-This page is the student-facing learning and homework list. The homework items marked **Archive
+This page is the student-facing learning resource and homework list. The homework items marked **Archive
 homework** are carried over from the previous BIGAI learning-list PDF, then lightly adapted to the
 current course.
 
@@ -30,15 +30,41 @@ current course.
 
 ### Homework
 
-1. **Archive homework: CS131 environment setup.** Follow the spirit of the CS131 homework guideline:
-   set up a Python environment, run a Jupyter notebook locally or on Colab, review Python/NumPy
-   notebooks if needed, clone a CS131 homework repository, and install its packages.
+1. **Archive homework: CS131-style environment setup.**
+   - **Goal:** make sure you can prepare a Python/Jupyter environment and install packages from an
+     existing course-style homework repository.
+   - **What to do:** follow the spirit of the CS131 homework guideline: create a Python environment,
+     run one Jupyter notebook locally or on Colab, review Python/NumPy notebooks if needed, clone one
+     CS131 released homework repository, and install the packages needed by that repository.
+   - **What to submit:** upload a folder named `week1/<student-id>/cs131_env/` to
+     [`Tsinghua-Tong/HW`](https://github.com/Tsinghua-Tong/HW). The folder should contain:
+     `README.md` with setup commands and notes, `requirements.txt` or `environment.yml`, and either
+     the executed notebook or screenshots showing that the notebook runs successfully.
+   - **How it is checked:** TAs will check whether the environment can be reproduced from your
+     commands/dependency file and whether the notebook runs without import or path errors.
    Reference: [StanfordVL CS131 released assignments](https://github.com/stanfordvl/cs131_release).
-2. **GitHub repository practice.** Fork/clone the course starter repository, create a branch named
-   `day1-<student-id>`, add a short `README.md`, commit at least twice, push the branch, and open a
-   pull request.
-3. **Environment check notebook.** Create a notebook that prints Python, PyTorch, CUDA/MPS
-   availability, and runs one tensor operation. Commit both the notebook and a dependency file.
+2. **GitHub repository practice.**
+   - **Goal:** make sure you know the basic GitHub workflow used by this course: clone/fork, branch,
+     commit, push, and pull request.
+   - **What to do:** fork or clone the course starter repository, create a branch named
+     `day1-<student-id>`, add a short `README.md`, make at least two meaningful commits, push the
+     branch, and open a pull request.
+   - **What to submit:** upload `week1/<student-id>/github_pr/README.md` to
+     [`Tsinghua-Tong/HW`](https://github.com/Tsinghua-Tong/HW). This README should include links to
+     your fork or branch, the two commits, and the pull request, plus 2-3 sentences explaining what
+     you changed.
+   - **How it is checked:** TAs will check that the branch name is correct, at least two commits are
+     visible, the pull request can be opened, and your submitted README contains the required links.
+3. **Environment check notebook.**
+   - **Goal:** confirm that your Python, PyTorch, and accelerator setup is visible from a notebook.
+   - **What to do:** create a notebook that prints Python version, PyTorch version, CUDA or MPS
+     availability, and runs one small tensor operation.
+   - **What to submit:** upload a folder named `week1/<student-id>/env_check/` to
+     [`Tsinghua-Tong/HW`](https://github.com/Tsinghua-Tong/HW). The folder should contain the
+     executed notebook (`.ipynb`) and a dependency file such as `requirements.txt` or
+     `environment.yml`.
+   - **How it is checked:** TAs will open the notebook output and check that the version information,
+     accelerator availability result, and tensor-operation output are all present.
 4. **Archive homework: LaTeX CV.** Prepare a one-page professional CV using LaTeX. Commit the `.tex`
    source and compiled PDF, push to the shared repository, and write a short email draft to a
    potential supervisor using appropriate academic email etiquette.
