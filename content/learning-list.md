@@ -7,9 +7,16 @@ current course.
 ## Submission Convention
 
 - Homework is submitted through the course GitHub organization/repository unless otherwise announced.
+- All homework materials should be uploaded to [`Tsinghua-Tong/HW`](https://github.com/Tsinghua-Tong/HW).
 - Each student should keep one personal working repository and one submitted pull request per assigned task.
 - Reports should be written in LaTeX and committed together with source code when relevant.
 - For external university assignments, follow the spirit of the task and cite the original course page; do not submit copied solutions.
+
+## Homework Deadlines
+
+- **Week 1 homework** is due on **Sunday, 2026-07-19**.
+- **Week 2 homework** is due on **Sunday, 2026-07-26**.
+- **Final report / course-ending deliverables** follow the original course deadline.
 
 ## Day 1-2 · Shared Foundations
 
