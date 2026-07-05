@@ -18,7 +18,7 @@ student-facing files.
 | Tab | Source file | Purpose |
 |---|---|---|
 | Syllabus | [`content/syllabus.md`](content/syllabus.md) | two-week course schedule |
-| Learning List / Homework | [`content/learning-list.md`](content/learning-list.md) | courses, tutorials, homework links, notebooks |
+| Learning Resource / Homework | [`content/learning-list.md`](content/learning-list.md) | courses, tutorials, homework links, notebooks |
 | Paper Reading List | [`content/paper-reading-list.md`](content/paper-reading-list.md) | required and optional papers for reading reports |
 
 Older per-direction Markdown files may remain in `content/` for reference, but they are no longer
