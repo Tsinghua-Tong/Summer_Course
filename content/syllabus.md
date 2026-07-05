@@ -22,7 +22,7 @@ focus on tools, coding homework, paper reading, and practical reports.
 
 | Date | Morning lecture | Afternoon practice session |
 |---|---|---|
-| 7/13 Mon | **计算机视觉** · 陈以新 | Course setup: GitHub workflow, Python environment, Jupyter / Colab, repository submission rule |
+| 7/13 Mon | **计算机视觉** · 陈以新 | Offline session: server account allocation and basic Linux operations |
 | 7/14 Tue | **社会智能和心智理论** · 范丽凤 | LaTeX and academic writing: CV task, report template, email etiquette, reading-report format |
 | 7/15 Wed | **认知机器人** · 张泽宇 | Foundations for coding exercises: PyTorch basics, tensors/autograd, notebook reproducibility |
 | 7/16 Thu | **多模态具身智能** · 钟亦武（北大） | NLP / foundation-model practice: tokenization, sampling, CS224N / CS336-style notebook |
