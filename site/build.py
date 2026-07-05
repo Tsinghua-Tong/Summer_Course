@@ -16,7 +16,7 @@ from pathlib import Path
 # Ordered registry of tabs -> source Markdown. Add a row here to add a tab.
 DOCS = [
     ("syllabus", "Syllabus", "syllabus.md"),
-    ("learning-list", "Learning List / Homework", "learning-list.md"),
+    ("learning-list", "Learning Resource / Homework", "learning-list.md"),
     ("paper-reading-list", "Paper Reading List", "paper-reading-list.md"),
 ]
 
