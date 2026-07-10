@@ -233,7 +233,7 @@ What is still missing?**
 - Read at least **5 closely related papers** in that subdirection. You may use the course paper-reading list as a starting point, and you are strongly encouraged to read more papers when the topic requires it.
 - Write a literature review in **LaTeX** using the provided course template: [Download the LaTeX literature-review template](https://github.com/Tsinghua-Tong/Summer_Course/raw/main/archive/Report_Template_for_Tong_Summer_Course.zip).
 - The review should be **4-6 pages**, excluding references and appendices.
-- The review may be written in English or Chinese, but the writing must be coherent, citation-grounded, and not a collection of paper summaries.
+- The review must be written in English, and the writing must be coherent, citation-grounded, and not a collection of paper summaries.
 - Include a complete reference list. Every paper discussed in the text must be cited, and every reference should be cited in the text.
 - AI writing tools may be used for polishing, but you are responsible for correctness, citations, and final wording. Do not fabricate papers, results, datasets, or citations.
 
