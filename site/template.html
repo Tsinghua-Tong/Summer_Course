@@ -77,6 +77,11 @@
   .toc-list .toc-level-2 a{font-weight:750;color:var(--ink)}
   .toc-list .toc-level-3 a{padding-left:18px;font-size:.82rem}
   .toc-list .toc-level-4 a{padding-left:30px;font-size:.8rem}
+  .toc.homework-toc{padding-right:12px}
+  .toc.homework-toc .toc-list a{display:grid;grid-template-columns:64px minmax(0,1fr);column-gap:10px;align-items:start;
+    padding:7px 8px;font-weight:650;color:var(--ink)}
+  .toc-kicker{white-space:nowrap;color:var(--accent);font-weight:760}
+  .toc-text{min-width:0}
 
   footer{max-width:var(--max);margin:0 auto;padding:18px 20px 36px;color:var(--muted);font-size:.86rem}
   footer strong{color:var(--ink)}
@@ -166,7 +171,18 @@
         li.className = 'toc-level-' + h.tagName.slice(1);
         const a = document.createElement('a');
         a.href = '#' + h.id;
-        a.textContent = h.textContent;
+        if (docId === 'learning-list') {
+          const parts = splitHomeworkTitle(h.textContent);
+          const kicker = document.createElement('span');
+          kicker.className = 'toc-kicker';
+          kicker.textContent = parts.kicker;
+          const label = document.createElement('span');
+          label.className = 'toc-text';
+          label.textContent = parts.text;
+          a.append(kicker, label);
+        } else {
+          a.textContent = h.textContent;
+        }
         li.appendChild(a);
         list.appendChild(li);
       });
@@ -176,7 +192,17 @@
       title.textContent = docId === 'learning-list' ? '快捷索引' : '目录';
       toc.appendChild(title);
       toc.appendChild(list);
+      if (docId === 'learning-list') toc.classList.add('homework-toc');
       panel.classList.add('has-toc');
+    }
+
+    function splitHomeworkTitle(text){
+      const cleaned = text.replace(/\s+/g, ' ').trim();
+      const dayMatch = cleaned.match(/^(Day\s+\d+[–-]\d+)\s*·\s*(.+)$/);
+      if (dayMatch) return {kicker: dayMatch[1], text: dayMatch[2]};
+      const finalMatch = cleaned.match(/^(Final Assignment)\s*·\s*(.+)$/);
+      if (finalMatch) return {kicker: 'Final', text: finalMatch[2]};
+      return {kicker: '', text: cleaned};
     }
 
     function select(id){
