@@ -199,10 +199,14 @@
     function splitHomeworkTitle(text){
       const cleaned = text.replace(/\s+/g, ' ').trim();
       const dayMatch = cleaned.match(/^(Day\s+\d+[–-]\d+)\s*·\s*(.+)$/);
-      if (dayMatch) return {kicker: dayMatch[1], text: dayMatch[2]};
+      if (dayMatch) return {kicker: dayMatch[1], text: stripDateSuffix(dayMatch[2])};
       const finalMatch = cleaned.match(/^(Final Assignment)\s*·\s*(.+)$/);
-      if (finalMatch) return {kicker: 'Final', text: finalMatch[2]};
+      if (finalMatch) return {kicker: 'Final', text: stripDateSuffix(finalMatch[2])};
       return {kicker: '', text: cleaned};
+    }
+
+    function stripDateSuffix(text){
+      return text.replace(/\s*\([^)]*\)\s*$/, '').trim();
     }
 
     function select(id){
