@@ -55,6 +55,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 1. **CIFAR-10 Classification and Transfer Learning**
    - **Requirements:** Complete the assignment in one reproducible Jupyter or Colab notebook.
      - Load CIFAR-10 with `torchvision.datasets.CIFAR10` and report the number of training and test examples and the ten class names.
+     - Use the official CIFAR-10 training and test split. If you additionally create a validation split, clearly state how it is constructed.
      - Display at least 20 labeled training images in a grid.
      - Train a small CNN from scratch for at least 5 epochs. The network must contain at least two convolutional layers, one pooling operation, and one fully connected classification layer.
      - Fine-tune a pretrained `ResNet18` from `torchvision`. Replace its final classification layer for CIFAR-10 and clearly state whether the backbone is frozen or jointly fine-tuned.
@@ -73,7 +74,6 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ### Learning Path
 
-- **Instructors:** Wei Wang, Lifeng Fan.
 - Read at least **one classic paper** and **one modern paper** from the lists below. You may also choose another paper with a clear connection to cognition and modern AI, but the connection should be explained explicitly in your report.
 
 #### Classic Papers
@@ -127,7 +127,7 @@ Possible connection routes include backpropagation and deep learning, recurrent 
 
 1. **URDF Robot Modeling and Joint Control**
    - **Requirements:** Build and simulate one articulated robot. PyBullet is recommended; MuJoCo, Gazebo, Isaac Sim, or another simulator may be used if the same outputs are provided.
-     - Create or substantially modify a URDF model containing at least three links, two movable joints, visual geometry, collision geometry, and inertial parameters.
+     - Create or substantially modify a URDF model containing at least three links, two movable joints, visual geometry, collision geometry, and inertial parameters. If you use a non-URDF simulator such as MuJoCo, Gazebo, or Isaac Sim, submit the equivalent robot-description file and explain the model format in `README.md`.
      - At least two joints must be commandable. The model may additionally contain fixed joints.
      - Write a Python program that loads the robot, sets gravity and the simulation time step, prints joint names, types, and limits, and commands the movable joints using position or velocity control.
      - Execute a scripted motion lasting at least 10 simulated seconds.
