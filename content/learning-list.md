@@ -213,24 +213,7 @@ SocialSimulation_StudentID_Name/
      - Save one JSON log per run under `logs/`. Logs should contain messages, tool names, arguments, outputs, reviewer decisions, and final answers. Do not request or store hidden chain-of-thought.
      - Write `report.md` of 400–600 English words containing the setup, success rate of both systems, average tool calls and latency, one successful example, one failed example, and a conclusion on whether the reviewer was useful.
      - `python run_eval.py` must reproduce all 12 runs and regenerate `results.csv`. API keys must be read from environment variables and must not appear in submitted files or logs.
-   - **Submission:** Submit `AgentSystem_StudentID_Name.zip` containing only:
-
-```text
-AgentSystem_StudentID_Name/
-├── README.md
-├── requirements.txt
-├── course_material.md
-├── tasks.jsonl
-├── tools.py
-├── agent.py
-├── reviewer.py
-├── run_eval.py
-├── results.csv
-├── report.md
-└── logs/
-```
-
-   `README.md` must state the Python version, installation command, required environment-variable names, and exact evaluation command. Upload the ZIP file to **Tsinghua University Web Learning（清华网络学堂）**.
+   - **Submission:** Submit one ZIP file named `AgentSystem_StudentID_Name.zip`. It should contain all files needed to reproduce the evaluation, including a README, dependency specification, course material file, task file, tool and agent implementation, reviewer implementation, evaluation script, `results.csv`, report, and logs. Suggested filenames are `README.md`, `requirements.txt`, `course_material.md`, `tasks.jsonl`, `tools.py`, `agent.py`, `reviewer.py`, `run_eval.py`, `results.csv`, `report.md`, and `logs/`, but small naming or folder-organization differences are acceptable as long as the README clearly explains each file. `README.md` must state the Python version, installation command, required environment-variable names, and exact evaluation command. Upload the ZIP file to **Tsinghua University Web Learning（清华网络学堂）**.
    - **Deadline:** July 27, 23:59.
    - **Optional bonus:** Expose either `calculator` or `local_search` as a local MCP server and call it from the agent without changing the task set. Include the server code and one successful protocol trace. Up to 1 bonus point.
 
@@ -248,9 +231,8 @@ What is still missing?**
 
 - Choose one subdirection from the course, such as vision-language models, diffusion models, 3D vision, cognitive reasoning, embodied manipulation, robot foundation models, language-model alignment, retrieval-augmented generation, LLM agents, multi-agent systems, or social simulation.
 - Read at least **5 closely related papers** in that subdirection. You may use the course paper-reading list as a starting point, and you are strongly encouraged to read more papers when the topic requires it.
-- Write a literature review in **LaTeX** and submit the compiled PDF together with the source `.tex` file and bibliography file.
-- **Template:** [Download the LaTeX literature-review template](https://github.com/Tsinghua-Tong/Summer_Course/raw/main/archive/Report_Template_for_Tong_Summer_Course.zip).
-- The review should be **4-6 pages**, excluding references and appendices. Use a standard conference-style template such as NeurIPS, ICML, ICLR, CVPR, ACL, or a clean article template with 10-11 pt font.
+- Write a literature review in **LaTeX** using the provided course template: [Download the LaTeX literature-review template](https://github.com/Tsinghua-Tong/Summer_Course/raw/main/archive/Report_Template_for_Tong_Summer_Course.zip).
+- The review should be **4-6 pages**, excluding references and appendices.
 - The review may be written in English or Chinese, but the writing must be coherent, citation-grounded, and not a collection of paper summaries.
 - Include a complete reference list. Every paper discussed in the text must be cited, and every reference should be cited in the text.
 - AI writing tools may be used for polishing, but you are responsible for correctness, citations, and final wording. Do not fabricate papers, results, datasets, or citations.
@@ -315,6 +297,6 @@ compare lines of work:
 
 ### Submission
 
-- **Files:** Submit `LiteratureReview_StudentID_Name.pdf`, the source `.tex` file, and the `.bib` file. If figures are not embedded in the `.tex`, include the figure files as well.
+- **Files:** Submit only the compiled PDF named `LiteratureReview_StudentID_Name.pdf`.
 - **Deadline:** August 2, 23:59.
 - **Platform:** Submit through **Tsinghua University Web Learning（清华网络学堂）**.
