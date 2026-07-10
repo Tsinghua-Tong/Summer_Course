@@ -18,14 +18,14 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ### Homework
 
-1. **Archive homework: LaTeX CV**
+1. **Archive homework: LaTeX CV** (5%)
    - **Requirements:** Export your personal CV as a PDF named `<your_name>_CV.pdf` and upload it to [`Tsinghua-Tong/2025-CV`](https://github.com/Tsinghua-Tong/2025-CV). Keep the CV within three pages. It may be written in Chinese or English, with flexible layout and typography. It must include at least a self-introduction, education background, honors and awards, personal skills, and research interests. The emphasis is on mastering LaTeX; grading will focus on completeness, correctness, and visual quality rather than the specific CV content.
    - **Template references:** [Overleaf CV templates](https://www.overleaf.com/gallery/tagged/cv). You may also use open-source CV templates from GitHub as references and replace publication-heavy sections with course projects or other relevant experience.
    - **Submission:** Upload `<your_name>_CV.pdf` to the designated GitHub repository.
    - **Deadline:** July 14, 23:59.
    - **Optional bonus:** Create a publicly accessible personal website by July 17, 23:59, preferably using GitHub Pages with a `.github.io` address. Up to 2 bonus points may be awarded.
 
-2. **Python Environment Setup** ()
+2. **Python Environment Setup** (5%)
    - **Requirements:** Follow the [CS131 homework guideline](http://vision.stanford.edu/teaching/cs131_fall2021/assignments.html) to create a Python virtual environment and run Jupyter Notebook both locally, using Anaconda, VS Code, or JupyterLab, and online using Google Colab. Clone the CS131 homework repository and install the required packages. The Python and NumPy review notebooks listed in the syllabus are recommended for optional self-practice.
    - **The notebook must include:**
      - Your operating system, Python version, and environment-management tool;
