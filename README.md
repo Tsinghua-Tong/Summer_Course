@@ -21,8 +21,7 @@ student-facing files.
 | Learning Resource / Homework | [`content/learning-list.md`](content/learning-list.md) | courses, tutorials, homework links, notebooks |
 | Paper Reading List | [`content/paper-reading-list.md`](content/paper-reading-list.md) | required and optional papers for reading reports |
 
-Older per-direction Markdown files may remain in `content/` for reference, but they are no longer
-rendered as website tabs.
+The site only renders these three deployable Markdown files.
 
 ## Build
 

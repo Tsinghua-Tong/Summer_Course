@@ -6,66 +6,75 @@
 <title>通用人工智能系统平台I · Course Resources</title>
 <style>
   :root{
-    --ink:#202124;
-    --muted:#5f6368;
-    --line:#dadce0;
-    --soft:#f8f9fa;
-    --accent:#1a73e8;
-    --bg:#ffffff;
-    --max:1040px;
+    --ink:#1f2937;
+    --muted:#6b7280;
+    --line:#dde3ea;
+    --soft:#f6f8fb;
+    --accent:#1d4ed8;
+    --accent-soft:#e8f0ff;
+    --bg:#f3f6fb;
+    --card:#ffffff;
+    --max:1080px;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);
+  body{margin:0;background:
+      radial-gradient(circle at top left, rgba(29,78,216,.10), transparent 34%),
+      radial-gradient(circle at top right, rgba(14,165,233,.09), transparent 28%),
+      var(--bg);color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",
-      "PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.62;}
+      "PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.72;}
   a{color:var(--accent);text-decoration:none}
   a:hover{text-decoration:underline}
 
-  header{border-bottom:1px solid var(--line);background:var(--soft)}
-  .header-inner{max-width:var(--max);margin:0 auto;padding:24px 20px 20px}
-  h1{margin:0 0 8px;font-size:1.8rem;font-weight:650;letter-spacing:0}
+  header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.78);backdrop-filter:saturate(180%) blur(14px)}
+  .header-inner{max-width:var(--max);margin:0 auto;padding:28px 20px 22px}
+  h1{margin:0 0 8px;font-size:1.9rem;font-weight:720;letter-spacing:-.01em}
   .subtitle{margin:0;color:var(--muted);font-size:1rem}
-  .meta{display:flex;flex-wrap:wrap;gap:12px 18px;margin-top:14px;color:var(--muted);font-size:.92rem}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:14px;color:var(--muted);font-size:.92rem}
+  .meta span{padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:#fff}
 
-  nav.tabs{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
-  .tabs-inner{max-width:var(--max);margin:0 auto;display:flex;gap:2px;overflow-x:auto;padding:0 20px}
-  .tab{appearance:none;border:0;border-bottom:3px solid transparent;background:transparent;
-    color:var(--muted);cursor:pointer;font:inherit;font-size:.95rem;font-weight:600;
-    padding:12px 14px 10px;white-space:nowrap}
-  .tab:hover{color:var(--ink);background:var(--soft)}
-  .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+  nav.tabs{position:sticky;top:0;z-index:10;background:rgba(243,246,251,.88);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+  .tabs-inner{max-width:var(--max);margin:0 auto;display:flex;gap:8px;overflow-x:auto;padding:10px 20px}
+  .tab{appearance:none;border:1px solid var(--line);border-radius:999px;background:#fff;
+    color:var(--muted);cursor:pointer;font:inherit;font-size:.94rem;font-weight:650;
+    padding:9px 14px;white-space:nowrap;box-shadow:0 1px 1px rgba(16,24,40,.03)}
+  .tab:hover{color:var(--ink);border-color:#c7d2e5;background:var(--soft)}
+  .tab.active{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
 
-  main{max-width:var(--max);margin:0 auto;padding:26px 20px 56px}
+  main{max-width:var(--max);margin:0 auto;padding:28px 20px 60px}
   .panel{display:none}
-  .panel.active{display:block}
+  .panel.active{display:block;background:var(--card);border:1px solid var(--line);border-radius:20px;
+    box-shadow:0 18px 50px rgba(17,24,39,.08);padding:26px 26px 20px}
   .md{max-width:920px}
   .md h1{font-size:1.65rem;margin:0 0 .75em;padding-bottom:.35em;border-bottom:1px solid var(--line)}
   .md h2{font-size:1.28rem;margin:1.8em 0 .55em;padding-top:.15em}
   .md h3{font-size:1.05rem;margin:1.25em 0 .35em}
-  .md p{margin:.65em 0}
-  .md blockquote{margin:1em 0;padding:.2em 1em;border-left:3px solid var(--line);color:var(--muted)}
+  .md p{margin:.72em 0}
+  .md blockquote{margin:1em 0;padding:.2em 1em;border-left:4px solid var(--accent);background:#f8fbff;color:var(--muted);border-radius:0 12px 12px 0}
   .md blockquote p{margin:.3em 0}
   .md code{background:var(--soft);border:1px solid #eceff1;padding:.08em .32em;border-radius:4px;
     font-size:.9em;font-family:"SF Mono",Menlo,Consolas,monospace}
-  .md pre{background:#f6f8fa;border:1px solid var(--line);padding:13px;overflow:auto}
+  .md pre{background:#f6f8fa;border:1px solid var(--line);padding:14px 16px;border-radius:12px;overflow:auto}
   .md pre code{background:transparent;border:0;padding:0}
-  .md table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.93rem}
-  .md th,.md td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
-  .md th{background:var(--soft);font-weight:650}
+  .md table{border-collapse:separate;border-spacing:0;width:100%;margin:1em 0;font-size:.93rem;overflow:hidden;border:1px solid var(--line);border-radius:14px}
+  .md th,.md td{border-bottom:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  .md th{background:var(--soft);font-weight:700}
+  .md tr:last-child td{border-bottom:0}
   .md ul,.md ol{padding-left:1.35em}
-  .md li{margin:.22em 0}
-  .md hr{border:0;border-top:1px solid var(--line);margin:1.8em 0}
+  .md li{margin:.28em 0}
+  .md hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 
-  footer{max-width:var(--max);margin:0 auto;padding:18px 20px 36px;border-top:1px solid var(--line);
-    color:var(--muted);font-size:.86rem}
+  footer{max-width:var(--max);margin:0 auto;padding:18px 20px 36px;color:var(--muted);font-size:.86rem}
+  footer strong{color:var(--ink)}
 
   @media(max-width:640px){
     .header-inner{padding:20px 16px 16px}
     h1{font-size:1.45rem}
-    main{padding:22px 16px 44px}
+    main{padding:20px 16px 42px}
     .tabs-inner{padding:0 12px}
-    .tab{padding:11px 10px 9px}
+    .tab{padding:8px 12px}
+    .panel.active{padding:20px 18px 12px;border-radius:16px}
   }
 </style>
 </head>
