@@ -1,11 +1,5 @@
 # Syllabus · 通用人工智能系统平台I
 
-> **课程名称：** 通用人工智能系统平台I
-> **开课对象：** 清华通班大一下学生
-> **授课形式：** 课堂讲授 + 编程练习 + 实践报告
-> **时间：** 2026年7月13日-7月26日
-> **地点：** 通院2201大教室
-
 This syllabus combines the main morning lecture series for the two-week course.
 Morning sessions introduce the broad research landscape of general AI systems.
 

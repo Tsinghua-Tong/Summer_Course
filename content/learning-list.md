@@ -1,4 +1,4 @@
-# Learning Resources and Homework · 通用人工智能系统平台 I
+# Homework · 通用人工智能系统平台 I
 
 Except for a short in-person session in Room 2201 on the afternoon of July 14, students should arrange their own time in the afternoons and evenings to read the assigned materials and complete the homework. The assignments are designed to help you become familiar with common research tools and gain an introductory understanding of different AI research areas. You are encouraged to make good use of online resources, AI tools, and discussions with classmates. If a problem remains unresolved, please contact the teaching assistants, who will be available online every workday from 13:00 to 16:00. Please plan ahead and submit all assignments on time, as late submissions may receive a grade deduction.
 

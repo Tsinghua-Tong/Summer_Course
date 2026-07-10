@@ -28,11 +28,9 @@
   a:hover{text-decoration:underline}
 
   header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.78);backdrop-filter:saturate(180%) blur(14px)}
-  .header-inner{max-width:var(--max);margin:0 auto;padding:28px 20px 22px}
+  .header-inner{max-width:var(--max);margin:0 auto;padding:18px 20px 16px}
   h1{margin:0 0 8px;font-size:1.9rem;font-weight:720;letter-spacing:-.01em}
   .subtitle{margin:0;color:var(--muted);font-size:1rem}
-  .meta{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:14px;color:var(--muted);font-size:.92rem}
-  .meta span{padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:#fff}
 
   nav.tabs{position:sticky;top:0;z-index:10;background:rgba(243,246,251,.88);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
   .tabs-inner{max-width:var(--max);margin:0 auto;display:flex;gap:8px;overflow-x:auto;padding:10px 20px}
@@ -46,10 +44,13 @@
   .panel{display:none}
   .panel.active{display:block;background:var(--card);border:1px solid var(--line);border-radius:20px;
     box-shadow:0 18px 50px rgba(17,24,39,.08);padding:26px 26px 20px}
+  .panel.has-toc.active{display:grid;grid-template-columns:230px minmax(0,1fr);gap:26px}
   .md{max-width:920px}
   .md h1{font-size:1.65rem;margin:0 0 .75em;padding-bottom:.35em;border-bottom:1px solid var(--line)}
   .md h2{font-size:1.28rem;margin:1.8em 0 .55em;padding-top:.15em}
   .md h3{font-size:1.05rem;margin:1.25em 0 .35em}
+  .md h4{font-size:.98rem;margin:1em 0 .3em}
+  .md h2,.md h3,.md h4{scroll-margin-top:74px}
   .md p{margin:.72em 0}
   .md blockquote{margin:1em 0;padding:.2em 1em;border-left:4px solid var(--accent);background:#f8fbff;color:var(--muted);border-radius:0 12px 12px 0}
   .md blockquote p{margin:.3em 0}
@@ -65,6 +66,17 @@
   .md li{margin:.28em 0}
   .md hr{border:0;border-top:1px solid var(--line);margin:2em 0}
 
+  .toc{display:none}
+  .panel.has-toc .toc{display:block;position:sticky;top:62px;align-self:start;max-height:calc(100vh - 84px);overflow:auto;
+    border-right:1px solid var(--line);padding:4px 14px 4px 0;color:var(--muted)}
+  .toc-title{margin:0 0 10px;font-size:.78rem;font-weight:750;color:var(--ink);letter-spacing:.02em;text-transform:uppercase}
+  .toc-list{list-style:none;margin:0;padding:0}
+  .toc-list li{margin:0}
+  .toc-list a{display:block;border-radius:8px;padding:5px 8px;color:var(--muted);font-size:.86rem;line-height:1.35}
+  .toc-list a:hover{background:var(--soft);color:var(--accent);text-decoration:none}
+  .toc-list .toc-level-3 a{padding-left:18px;font-size:.82rem}
+  .toc-list .toc-level-4 a{padding-left:30px;font-size:.8rem}
+
   footer{max-width:var(--max);margin:0 auto;padding:18px 20px 36px;color:var(--muted);font-size:.86rem}
   footer strong{color:var(--ink)}
 
@@ -75,6 +87,9 @@
     .tabs-inner{padding:0 12px}
     .tab{padding:8px 12px}
     .panel.active{padding:20px 18px 12px;border-radius:16px}
+    .panel.has-toc.active{display:block}
+    .panel.has-toc .toc{position:static;max-height:none;overflow:visible;border-right:0;border-bottom:1px solid var(--line);
+      padding:0 0 14px;margin-bottom:18px}
   }
 </style>
 </head>
@@ -83,12 +98,6 @@
     <div class="header-inner">
       <h1>通用人工智能系统平台 I</h1>
       <p class="subtitle">General Artificial Intelligence Systems Platform I · Course Resources</p>
-      <div class="meta">
-        <span>2026年7月13日-7月26日（2周）</span>
-        <span>通院2201大教室</span>
-        <span>清华通班大一下学生</span>
-        <span>课堂讲授 + 编程练习 + 实践报告</span>
-      </div>
     </div>
   </header>
 
@@ -121,9 +130,53 @@
       const panel = document.createElement('section');
       panel.className = 'panel' + (i===0 ? ' active' : '');
       panel.id = doc.id;
-      panel.innerHTML = '<div class="md">' + marked.parse(doc.md) + '</div>';
+      panel.innerHTML = '<aside class="toc" aria-label="Table of contents"></aside><div class="md">' + marked.parse(doc.md) + '</div>';
       panels.appendChild(panel);
+      buildToc(panel, doc.id);
     });
+
+    function slugify(text){
+      return text.trim().toLowerCase()
+        .replace(/<[^>]*>/g, '')
+        .replace(/&amp;/g, 'and')
+        .replace(/[^\p{L}\p{N}]+/gu, '-')
+        .replace(/^-+|-+$/g, '') || 'section';
+    }
+
+    function buildToc(panel, docId){
+      const toc = panel.querySelector('.toc');
+      const md = panel.querySelector('.md');
+      const selector = docId === 'learning-list' ? 'h2' : (docId === 'paper-reading-list' ? 'h2,h3,h4' : '');
+      if (!selector) return;
+
+      const headings = Array.from(md.querySelectorAll(selector));
+      if (!headings.length) return;
+
+      const seen = new Map();
+      const list = document.createElement('ul');
+      list.className = 'toc-list';
+      headings.forEach(h => {
+        const base = h.id || slugify(h.textContent);
+        const count = seen.get(base) || 0;
+        seen.set(base, count + 1);
+        h.id = count ? `${base}-${count + 1}` : base;
+
+        const li = document.createElement('li');
+        li.className = 'toc-level-' + h.tagName.slice(1);
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent;
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+
+      const title = document.createElement('p');
+      title.className = 'toc-title';
+      title.textContent = docId === 'learning-list' ? '快捷索引' : '目录';
+      toc.appendChild(title);
+      toc.appendChild(list);
+      panel.classList.add('has-toc');
+    }
 
     function select(id){
       document.querySelectorAll('.tab').forEach(t =>

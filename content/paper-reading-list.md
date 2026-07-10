@@ -1,24 +1,6 @@
 # Paper Reading List · 通用人工智能系统平台I
 
-Updated: July 10, 2026.
-
-This reading list follows the research directions in `learning-list.md`. "Required" papers are
-the small set that every student should understand even if they do not work on that direction.
-"Optional" papers are recommended paths for students who want to write a report or literature
-review in that area.
-
-For each paper, the sentence after the title states the main reason to read it.
-
-## Reading Report Format
-
-- Choose at least one required or optional paper.
-- Write a 2-4 page LaTeX report in English or Chinese.
-- Include the problem background, main method, experiment design or evidence, limitations, and one possible improvement or follow-up experiment.
-- Submit the `.tex`, compiled PDF, and any reproduction code through the course repository or the designated course platform.
-
----
-
-## Direction A · Multimodal and Vision
+## Multimodal and Vision
 
 ### Topic Description
 
@@ -65,7 +47,7 @@ tuning, and 3D scene representation.
 
 ---
 
-## Direction B · Cognition
+## Cognition
 
 ### Topic Description
 
@@ -109,7 +91,7 @@ systematic generalization.
 
 ---
 
-## Direction C · Embodied AI and Robotics
+## Embodied AI and Robotics
 
 ### Topic Description
 
@@ -149,7 +131,7 @@ web-scale knowledge to robot control.
 
 ---
 
-## Direction D · Foundation Models and NLP
+## Foundation Models and NLP
 
 ### Topic Description
 
@@ -195,7 +177,7 @@ comes from post-training or external tools.
 
 ---
 
-## Direction E · Social Simulation
+## Social Simulation
 
 ### Topic Description
 
@@ -231,7 +213,7 @@ agents as an experimental tool rather than a substitute for social science.
 
 ---
 
-## Direction F · Agent Systems and Multi-Agent Systems
+## Agent Systems and Multi-Agent Systems
 
 ### Topic Description
 
