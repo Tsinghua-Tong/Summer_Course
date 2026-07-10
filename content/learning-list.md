@@ -6,7 +6,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ## Day 1–2 · Preparatory Work (July 13–14)
 
-###### Learning Path
+#### Learning Path
 
 - Basic Linux command-line skills: [MIT The Missing Semester of Your CS Education](https://missing.csail.mit.edu/).
 - Git and GitHub: [GitHub Skills](https://skills.github.com/) and [Git and GitHub Tutorial for Beginners](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners).
@@ -16,7 +16,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
   - Editors: [Overleaf](https://www.overleaf.com/) and [LaTeX Workshop in VS Code](https://dev.to/ucscmozilla/how-to-create-and-compile-latex-documents-on-visual-studio-code-3jbk).
   - Documentation: [Overleaf Learn](https://www.overleaf.com/learn) and [LaTeX Quick Start](https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_(part_1)).
 
-###### Homework
+### Homework
 
 1. **Archive homework: LaTeX CV**
    - **Requirements:** Export your personal CV as a PDF named `<your_name>_CV.pdf` and upload it to [`Tsinghua-Tong/2025-CV`](https://github.com/Tsinghua-Tong/2025-CV). Keep the CV within three pages. It may be written in Chinese or English, with flexible layout and typography. It must include at least a self-introduction, education background, honors and awards, personal skills, and research interests. The emphasis is on mastering LaTeX; grading will focus on completeness, correctness, and visual quality rather than the specific CV content.
@@ -43,14 +43,14 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ## Day 3–4 · Multimodal and Vision (July 15–16)
 
-###### Learning Path
+### Learning Path
 
 - Classical vision and assignment style: [Stanford CS131](https://cs131.stanford.edu/) and [StanfordVL CS131 released assignments](https://github.com/stanfordvl/cs131_release).
 - Modern deep vision: [Stanford CS231n 2025](https://cs231n.stanford.edu/2025/), [CS231n assignments](https://cs231n.stanford.edu/assignments.html), and the [PyTorch CIFAR-10 tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html).
 - Transfer learning and pretrained models: [PyTorch transfer-learning tutorial](https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html) and [torchvision model weights](https://docs.pytorch.org/vision/main/models.html).
 - Multimodal extension: [OpenCLIP](https://github.com/mlfoundations/open_clip) and [Hugging Face zero-shot image classification](https://huggingface.co/docs/transformers/tasks/zero_shot_image_classification).
 
-###### Homework
+### Homework
 
 1. **CIFAR-10 Classification and Transfer Learning**
    - **Requirements:** Complete the assignment in one reproducible Jupyter or Colab notebook.
@@ -71,7 +71,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ## Day 5–6 · Cognition (July 17–18)
 
-###### Learning Path
+### Learning Path
 
 - Read at least **one classic paper** and **one modern paper** from the lists provided by the instructors.
 - You may connect the papers to one contemporary theme:
@@ -82,7 +82,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
   - Causal and compositional learning;
   - Interpretability and alignment.
 
-###### Homework
+### Homework
 
 1. **Short Cognition Report**
    - **Requirements:** Write a short report in English using LaTeX. Address the following questions:
@@ -104,14 +104,14 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ## Day 7–8 · Embodied AI and Robotics (July 19–20)
 
-###### Learning Path
+### Learning Path
 
 - Robotics foundations: [Modern Robotics](https://hades.mech.northwestern.edu/index.php/Modern_Robotics), especially the chapters on configuration space and rigid-body motion.
 - Robot description: [ROS 2 URDF tutorials](https://docs.ros.org/en/foxy/Tutorials/Intermediate/URDF/Using-URDF-with-Robot-State-Publisher.html).
 - Simulation: [PyBullet Quickstart Guide](https://github.com/bulletphysics/bullet3/blob/master/docs/pybullet_quickstartguide.pdf), [MuJoCo documentation](https://mujoco.readthedocs.io/), and [Gymnasium-Robotics](https://robotics.farama.org/).
 - Robot learning: [CMU 16-831 Introduction to Robot Learning](https://16-831.github.io/fall25/) and [Stable-Baselines3 examples](https://stable-baselines3.readthedocs.io/en/master/guide/examples.html).
 
-###### Homework
+### Homework
 
 1. **URDF Robot Modeling and Joint Control**
    - **Requirements:** Build and simulate one articulated robot. PyBullet is recommended; MuJoCo, Gazebo, Isaac Sim, or another simulator may be used if the same outputs are provided.
@@ -142,14 +142,14 @@ Robotics_StudentID_Name/
 
 ## Day 9–10 · Foundation Models and NLP (July 21–22)
 
-###### Learning Path
+### Learning Path
 
 - NLP API reference: [Hugging Face Transformers documentation](https://huggingface.co/docs/transformers).
 - Practical library path: [Hugging Face LLM Course](https://huggingface.co/learn/llm-course).
 - University course path: [Stanford CS224N](https://web.stanford.edu/class/cs224n/) and [Stanford CS336: Language Modeling from Scratch](https://stanford-cs336.github.io/spring2024/).
 - Code-first tutorial: [The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/).
 
-###### Homework
+### Homework
 
 1. **Archive homework: CS224N Assignment 1**
    - **Requirements:** Play with Jupyter Notebook and complete the word-vector assignment. Reference: [CS224N Assignment 1: Exploring Word Vectors](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/assignments/a1_preview/exploring_word_vectors.html).
@@ -170,13 +170,13 @@ Robotics_StudentID_Name/
 
 ## Day 11–12 · Social Simulation (July 23–24)
 
-###### Learning Path
+### Learning Path
 
 - Agent-based modeling: [Mesa documentation](https://mesa.readthedocs.io/) and [Mesa first-model tutorial](https://mesa.readthedocs.io/latest/tutorials/0_first_model.html).
 - LLM-based social simulation: [AgentSociety](https://github.com/tsinghua-fib-lab/agentsociety/), [AgentSociety documentation](https://agentsociety.readthedocs.io/), and [Google DeepMind Concordia](https://github.com/google-deepmind/concordia).
 - Embodied and social environments: [TongSIM](https://tongsim-platform.github.io/tongsim/).
 
-###### Homework
+### Homework
 
 1. **Reproducible Agent-Based Social Simulation**
    - **Requirements:** Implement a Schelling-style segregation model using Mesa or plain Python and study how one behavioral parameter changes the population-level outcome.
@@ -205,14 +205,14 @@ SocialSimulation_StudentID_Name/
 
 ## Day 13–14 · Agent Systems and Multi-Agent Systems (July 25–26)
 
-###### Learning Path
+### Learning Path
 
 - Tool-using agents: [LangChain agent documentation](https://docs.langchain.com/oss/python/langchain/agents) and [LangGraph quickstart](https://docs.langchain.com/oss/python/langgraph/quickstart).
 - Multi-agent systems: [AutoGen AgentChat](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/index.html).
 - Tool interoperability: [Model Context Protocol introduction](https://modelcontextprotocol.io/docs/getting-started/intro).
 - Agent evaluation references: [AgentBench](https://arxiv.org/abs/2308.03688), [WebArena](https://arxiv.org/abs/2307.13854), [OSWorld](https://arxiv.org/abs/2404.07972), and [SWE-agent](https://arxiv.org/abs/2405.15793).
 
-###### Homework
+### Homework
 
 1. **Small Tool-Using Agent and Evaluation**
    - **Requirements:** Build one agent that answers a fixed task set using tools, then add a reviewer stage and test whether it improves reliability. LangGraph, AutoGen AgentChat, or a self-written loop may be used.
