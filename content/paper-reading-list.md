@@ -1,8 +1,6 @@
 # Paper Reading List · 通用人工智能系统平台I
 
-## Multimodal and Vision
-
-### Topic Description
+## 1. **Multimodal and Vision**
 
 This direction studies how AI systems perceive, represent, segment, generate, and reason about
 visual data, and how visual models connect to language, 3D structure, and embodied tasks. A good
@@ -47,9 +45,7 @@ tuning, and 3D scene representation.
 
 ---
 
-## Cognition
-
-### Topic Description
+## 2. **Cognition**
 
 This direction asks what forms of representation, reasoning, learning, and social understanding are
 needed for human-like intelligence. The key contrast is between statistical pattern recognition and
@@ -91,9 +87,7 @@ systematic generalization.
 
 ---
 
-## Embodied AI and Robotics
-
-### Topic Description
+## 3. **Embodied AI and Robotics**
 
 This direction studies agents that perceive, plan, learn, and act in physical or simulated
 environments. The core progression is simulation and control, reinforcement and imitation learning,
@@ -131,9 +125,7 @@ web-scale knowledge to robot control.
 
 ---
 
-## Foundation Models and NLP
-
-### Topic Description
+## 4. **Foundation Models and NLP**
 
 This direction studies language models as general-purpose sequence models: pretraining objectives,
 scaling, adaptation, alignment, retrieval, reasoning, tool use, and evaluation. The reading path should
@@ -177,9 +169,7 @@ comes from post-training or external tools.
 
 ---
 
-## Social Simulation
-
-### Topic Description
+## 5. **Social Simulation**
 
 This direction studies how macro-level social patterns can emerge from interacting agents, and how
 simulation can be used responsibly as a scientific instrument. Students should distinguish model
@@ -213,9 +203,7 @@ agents as an experimental tool rather than a substitute for social science.
 
 ---
 
-## Agent Systems and Multi-Agent Systems
-
-### Topic Description
+## 6. **Agent Systems and Multi-Agent Systems**
 
 This direction studies systems that use language models as interactive decision makers: they plan,
 call tools, browse websites, operate computers, write code, collaborate with other agents, and are

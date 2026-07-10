@@ -122,19 +122,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
      - Save the joint-position trajectory to `joint_trajectory.csv` and plot joint position against simulation time.
      - Record one 10–30 second MP4 or GIF showing the motion clearly.
      - In `README.md`, include installation commands, the command used to run the simulation, a short description of the robot structure, and a brief explanation of the difference among kinematic description, dynamics parameters, and control commands.
-   - **Submission:** Submit `Robotics_StudentID_Name.zip` containing only:
-
-```text
-Robotics_StudentID_Name/
-├── README.md
-├── robot.urdf
-├── control.py
-├── joint_trajectory.csv
-├── joint_trajectory.png
-└── rollout.mp4 or rollout.gif
-```
-
-   The staff should be able to install the listed dependencies and run `python control.py` without editing file paths. Upload the ZIP file to **Tsinghua University Web Learning（清华网络学堂）**.
+   - **Submission:** Submit one ZIP file named `Robotics_StudentID_Name.zip`. It should contain all files needed to reproduce the result, including a README, the robot description file, the control script, the saved joint trajectory, the trajectory plot, and one rollout video or GIF. Suggested filenames are `README.md`, `robot.urdf`, `control.py`, `joint_trajectory.csv`, `joint_trajectory.png`, and `rollout.mp4` or `rollout.gif`, but small naming or folder-organization differences are acceptable as long as the README clearly explains each file and the staff can run the project without editing file paths. Upload the ZIP file to **Tsinghua University Web Learning（清华网络学堂）**.
    - **Deadline:** July 20, 23:59.
    - **Optional bonus:** Train PPO on `CartPole-v1` or one small Gymnasium/MuJoCo task for at least three random seeds. Submit the learning curve and the mean and standard deviation of final returns. Up to 1 bonus point.
 
