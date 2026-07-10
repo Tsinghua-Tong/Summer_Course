@@ -1,10 +1,10 @@
 # Homework · 通用人工智能系统平台 I
 
-Except for a short in-person session in Room 2201 on the afternoon of July 14, students should arrange their own time in the afternoons and evenings to read the assigned materials and complete the homework. The assignments are designed to help you become familiar with common research tools and gain an introductory understanding of different AI research areas. You are encouraged to make good use of online resources, AI tools, and discussions with classmates. If a problem remains unresolved, please contact the teaching assistants, who will be available online every workday from 13:00 to 16:00. Please plan ahead and submit all assignments on time, as late submissions may receive a grade deduction.
+Except for a short in-person session in Room 2201 on the afternoon of July 14, students should arrange their own time in the afternoons and evenings to read the assigned materials and complete the homework. The assignments are designed to help you become familiar with common research tools and gain an introductory understanding of different AI research areas. You are encouraged to make good use of online resources, AI tools, and discussions with classmates. If a problem remains unresolved, please contact the teaching assistants, who will be available online every workday from 13:00 to 16:00. Please plan ahead and submit all assignments on time, as late submissions may receive a grade deduction. Class attendance registration accounts for 20%, homework accounts for 80%. If you need to be absent, you must ask for leave at least one day in advance; otherwise, your overall grade will be deducted 5 points.
 
 ---
 
-## Day 1–2 · Preparatory Work (July 13–14) (15%)
+## Day 1–2 · Preparatory Work (July 13–14) (10%)
 
 #### Learning Path
 
@@ -41,7 +41,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ---
 
-## Day 3–4 · Multimodal and Vision (July 15–16) (10%)
+## Day 3–4 · Multimodal and Vision (July 15–16) (5%)
 
 ### Learning Path
 
@@ -70,7 +70,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ---
 
-## Day 5–6 · Cognition (July 17–18) (10%)
+## Day 5–6 · Cognition (July 17–18) (5%)
 
 ### Learning Path
 
@@ -114,7 +114,7 @@ Possible connection routes include backpropagation and deep learning, recurrent 
 
 ---
 
-## Day 7–8 · Embodied AI and Robotics (July 19–20) (10%)
+## Day 7–8 · Embodied AI and Robotics (July 19–20) (5%)
 
 ### Learning Path
 
@@ -140,7 +140,7 @@ Possible connection routes include backpropagation and deep learning, recurrent 
 
 ---
 
-## Day 9–10 · Foundation Models and NLP (July 21–22) (10%)
+## Day 9–10 · Foundation Models and NLP (July 21–22) (5%)
 
 ### Learning Path
 
@@ -168,7 +168,7 @@ Possible connection routes include backpropagation and deep learning, recurrent 
 
 ---
 
-## Day 11–12 · Social Simulation (July 23–24) (10%)
+## Day 11–12 · Social Simulation (July 23–24) (5%)
 
 ### Learning Path
 
@@ -203,7 +203,7 @@ SocialSimulation_StudentID_Name/
 
 ---
 
-## Day 13–14 · Agent Systems and Multi-Agent Systems (July 25–26) (10%)
+## Day 13–14 · Agent Systems and Multi-Agent Systems (July 25–26) (5%)
 
 ### Learning Path
 
@@ -231,7 +231,7 @@ SocialSimulation_StudentID_Name/
 
 ---
 
-## Final Assignment · Literature Review (25%)
+## Final Assignment · Literature Review (40%)
 
 It is important and necessary to write a literature review before the start of a research project.
 Without comprehensive understanding of the related research areas, one may not be able to draw
