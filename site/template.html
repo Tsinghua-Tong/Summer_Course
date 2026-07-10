@@ -208,7 +208,11 @@
     }
 
     function stripDateSuffix(text){
-      return text.replace(/\s*\([^)]*\)\s*$/, '').trim();
+      return text
+        .replace(/\s*\((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:\s*[–-]\s*\d{1,2})?\)\s*/gi, ' ')
+        .replace(/\s*\(\d{1,2}\/\d{1,2}(?:\s*[–-]\s*\d{1,2}\/\d{1,2})?\)\s*/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
     }
 
     function select(id){
