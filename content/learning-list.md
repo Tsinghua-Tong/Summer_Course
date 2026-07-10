@@ -4,7 +4,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ---
 
-## Day 1–2 · Preparatory Work (July 13–14)
+## Day 1–2 · Preparatory Work (July 13–14) (15%)
 
 #### Learning Path
 
@@ -25,7 +25,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
    - **Deadline:** July 14, 23:59.
    - **Optional bonus:** Create a publicly accessible personal website by July 17, 23:59, preferably using GitHub Pages with a `.github.io` address. Up to 2 bonus points may be awarded.
 
-2. **Python Environment Setup**
+2. **Python Environment Setup** ()
    - **Requirements:** Follow the [CS131 homework guideline](http://vision.stanford.edu/teaching/cs131_fall2021/assignments.html) to create a Python virtual environment and run Jupyter Notebook both locally, using Anaconda, VS Code, or JupyterLab, and online using Google Colab. Clone the CS131 homework repository and install the required packages. The Python and NumPy review notebooks listed in the syllabus are recommended for optional self-practice.
    - **The notebook must include:**
      - Your operating system, Python version, and environment-management tool;
@@ -41,7 +41,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ---
 
-## Day 3–4 · Multimodal and Vision (July 15–16)
+## Day 3–4 · Multimodal and Vision (July 15–16) (10%)
 
 ### Learning Path
 
@@ -70,7 +70,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ---
 
-## Day 5–6 · Cognition (July 17–18)
+## Day 5–6 · Cognition (July 17–18) (10%)
 
 ### Learning Path
 
@@ -114,7 +114,7 @@ Possible connection routes include backpropagation and deep learning, recurrent 
 
 ---
 
-## Day 7–8 · Embodied AI and Robotics (July 19–20)
+## Day 7–8 · Embodied AI and Robotics (July 19–20) (10%)
 
 ### Learning Path
 
@@ -140,7 +140,7 @@ Possible connection routes include backpropagation and deep learning, recurrent 
 
 ---
 
-## Day 9–10 · Foundation Models and NLP (July 21–22)
+## Day 9–10 · Foundation Models and NLP (July 21–22) (10%)
 
 ### Learning Path
 
@@ -168,7 +168,7 @@ Possible connection routes include backpropagation and deep learning, recurrent 
 
 ---
 
-## Day 11–12 · Social Simulation (July 23–24)
+## Day 11–12 · Social Simulation (July 23–24) (10%)
 
 ### Learning Path
 
@@ -203,7 +203,7 @@ SocialSimulation_StudentID_Name/
 
 ---
 
-## Day 13–14 · Agent Systems and Multi-Agent Systems (July 25–26)
+## Day 13–14 · Agent Systems and Multi-Agent Systems (July 25–26) (10%)
 
 ### Learning Path
 
@@ -231,7 +231,7 @@ SocialSimulation_StudentID_Name/
 
 ---
 
-## Final Assignment · Literature Review
+## Final Assignment · Literature Review (25%)
 
 It is important and necessary to write a literature review before the start of a research project.
 Without comprehensive understanding of the related research areas, one may not be able to draw
