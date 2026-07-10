@@ -73,24 +73,36 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ### Learning Path
 
-- Read at least **one classic paper** and **one modern paper** from the lists provided by the instructors.
-- You may connect the papers to one contemporary theme:
-  - Self-supervised and foundation models;
-  - Agentic AI;
-  - Multimodal and embodied intelligence;
-  - Neuroscience-inspired AI;
-  - Causal and compositional learning;
-  - Interpretability and alignment.
+- **Instructors:** Wei Wang, Lifeng Fan.
+- Read at least **one classic paper** and **one modern paper** from the lists below. You may also choose another paper with a clear connection to cognition and modern AI, but the connection should be explained explicitly in your report.
+
+#### Classic Papers
+
+- Rosenblatt, 1958, [**The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain**](https://doi.org/10.1037/h0042519). Early neural-network model connecting learning, representation, and brain-inspired computation.
+- Rumelhart, Hinton, and Williams, 1986, [**Learning representations by back-propagating errors**](https://doi.org/10.1038/323533a0). The classic backpropagation paper behind modern deep learning.
+- Sutton and Barto, 1981, [**Toward a Modern Theory of Adaptive Networks: Expectation and Prediction**](https://doi.org/10.1037/0033-295X.88.2.135). A bridge from prediction, adaptation, and psychology to reinforcement learning.
+- Ackley, Hinton, and Sejnowski, 1985, [**A Learning Algorithm for Boltzmann Machines**](https://doi.org/10.1207/s15516709cog0901_7). A classic energy-based learning model with links to modern generative modeling.
+- Elman, 1990, [**Finding Structure in Time**](https://doi.org/10.1207/s15516709cog1402_1). Early recurrent-network work on learning temporal and linguistic structure.
+
+#### Modern Papers
+
+- Lake et al., 2017, [**Building Machines That Learn and Think Like People**](https://doi.org/10.1017/S0140525X16001837). A cognition-centered agenda for human-like AI, emphasizing compositionality, causality, intuitive physics, and learning-to-learn.
+- Stahl and Feigenson, 2015, [**Observing the unexpected enhances infants' learning and exploration**](https://doi.org/10.1126/science.aaa3799). Evidence that surprise and active exploration shape early human learning.
+- Lake and Baroni, 2023, [**Human-like systematic generalization through a meta-learning neural network**](https://doi.org/10.1038/s41586-023-06668-3). A modern neural approach to systematic compositional generalization.
+- Vong et al., 2024, [**Grounded language acquisition through the eyes and ears of a single child**](https://doi.org/10.1126/science.adi1374). Studies language learning from one child's egocentric multimodal experience.
+- Hafner et al., 2023, [**Mastering Diverse Domains through World Models**](https://arxiv.org/abs/2301.04104). A modern world-model approach to prediction, planning, and control.
+- Dohare et al., 2024, [**Loss of Plasticity in Deep Continual Learning**](https://doi.org/10.1038/s41586-024-07711-7). Shows that deep networks can lose the ability to adapt during continual learning, connecting AI training dynamics to plasticity.
+
+Possible connection routes include backpropagation and deep learning, recurrent networks and modern sequence models, reinforcement learning and prediction, Boltzmann machines and energy-based models, surprise-driven exploration, grounded language learning, world models, systematic generalization, and continual learning.
 
 ### Homework
 
 1. **Short Cognition Report**
    - **Requirements:** Write a short report in English using LaTeX. Address the following questions:
      1. Choose one classic paper and identify a corresponding modern machine-learning technique or research direction. Explain the connection and the main differences between the original interpretation and the modern version.
-     2. Based on at least one modern paper, summarize the authors’ hypothesis, method, evidence, and conclusion. Comment on whether the experimental design and results adequately support the conclusion.
-     3. Extend the discussion to one current AI theme. Explain what concrete progress has been made and what remains unsolved.
-     4. Discuss whether modern or future AI should have a biological or cognitive basis. State your own position and support it with clear reasoning.
-     5. Add one further observation or question that you consider important.
+     2. Based on at least one modern paper, summarize the authors’ main hypothesis, method, evidence, and conclusion. Comment on whether the experimental design and results adequately support the conclusion.
+     3. Discuss whether modern or future AI should have a biological or cognitive basis. You may consider biological plausibility, embodiment, developmental learning, active exploration, continual learning, memory, world models, or structured inductive biases. State your own position and support it with clear reasoning.
+     4. Add one further observation or question that you consider important, such as whether large language models learn like humans, whether scaling is sufficient for intelligence, or whether AI should be treated as an engineering system, a cognitive model, or both.
    - **Report format:**
      - 2–3 pages, excluding references;
      - Approximately 1,000–1,500 English words;
