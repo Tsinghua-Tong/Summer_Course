@@ -74,7 +74,7 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 
 ### Learning Path
 
-- Read at least **one classic paper** and **one modern paper** from the lists below. You may also choose another paper with a clear connection to cognition and modern AI, but the connection should be explained explicitly in your report.
+- Read at least **one classic paper** and **one modern paper** from the lists below. (You may also choose another paper with a clear connection to cognition and modern AI, but the connection should be explained explicitly in your report.) You will find that modern, popular machine learning algorithms are first devised and published with a cognitive mind. This also illustrates that AI is (originally) a science, not alchemy.
 
 #### Classic Papers
 
@@ -93,13 +93,13 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 - Hafner et al., 2023, [**Mastering Diverse Domains through World Models**](https://arxiv.org/abs/2301.04104). A modern world-model approach to prediction, planning, and control.
 - Dohare et al., 2024, [**Loss of Plasticity in Deep Continual Learning**](https://doi.org/10.1038/s41586-024-07711-7). Shows that deep networks can lose the ability to adapt during continual learning, connecting AI training dynamics to plasticity.
 
-Possible connection routes include backpropagation and deep learning, recurrent networks and modern sequence models, reinforcement learning and prediction, Boltzmann machines and energy-based models, surprise-driven exploration, grounded language learning, world models, systematic generalization, and continual learning.
+Possible connection routes include backpropagation and deep learning, recurrent networks and modern sequence models, reinforcement learning and prediction, Boltzmann machines and energy-based models, surprise-driven exploration, grounded language learning, world models, systematic generalization, and continual learning. 
 
 ### Homework
 
 1. **Short Cognition Report**
    - **Requirements:** Write a short report in English using LaTeX. Address the following questions:
-     1. Choose one classic paper and identify a corresponding modern machine-learning technique or research direction. Explain the connection and the main differences between the original interpretation and the modern version.
+     1. Choose one classic paper and identify a corresponding modern machine-learning technique or research direction. Explain the connection and the main differences between the original interpretation and the modern version. What is the modern technique/algorithm that corresponds to the theory devised a few decades ago (one of the old papers you read)? What are the differences between the modern interpretations and the original ones?
      2. Based on at least one modern paper, summarize the authors’ main hypothesis, method, evidence, and conclusion. Comment on whether the experimental design and results adequately support the conclusion.
      3. Discuss whether modern or future AI should have a biological or cognitive basis. You may consider biological plausibility, embodiment, developmental learning, active exploration, continual learning, memory, world models, or structured inductive biases. State your own position and support it with clear reasoning.
      4. Add one further observation or question that you consider important, such as whether large language models learn like humans, whether scaling is sufficient for intelligence, or whether AI should be treated as an engineering system, a cognitive model, or both.
