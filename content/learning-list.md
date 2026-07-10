@@ -245,3 +245,87 @@ AgentSystem_StudentID_Name/
    `README.md` must state the Python version, installation command, required environment-variable names, and exact evaluation command. Upload the ZIP file to **Tsinghua University Web Learning（清华网络学堂）**.
    - **Deadline:** July 27, 23:59.
    - **Optional bonus:** Expose either `calculator` or `local_search` as a local MCP server and call it from the agent without changing the task set. Include the server code and one successful protocol trace. Up to 1 bonus point.
+
+---
+
+## Final Assignment · Literature Review
+
+It is important and necessary to write a literature review before the start of a research project.
+Without comprehensive understanding of the related research areas, one may not be able to draw
+inspirations from previous work and bring novel ideas. After completing this assignment, you should
+be able to answer: **What is your motivation to study this subfield? What has already been done?
+What is still missing?**
+
+### Requirements
+
+- Choose one subdirection from the course, such as vision-language models, diffusion models, 3D vision, cognitive reasoning, embodied manipulation, robot foundation models, language-model alignment, retrieval-augmented generation, LLM agents, multi-agent systems, or social simulation.
+- Read at least **5 closely related papers** in that subdirection. You may use the course paper-reading list as a starting point, and you are strongly encouraged to read more papers when the topic requires it.
+- Write a literature review in **LaTeX** and submit the compiled PDF together with the source `.tex` file and bibliography file.
+- The review should be **4-6 pages**, excluding references and appendices. Use a standard conference-style template such as NeurIPS, ICML, ICLR, CVPR, ACL, or a clean article template with 10-11 pt font.
+- The review may be written in English or Chinese, but the writing must be coherent, citation-grounded, and not a collection of paper summaries.
+- Include a complete reference list. Every paper discussed in the text must be cited, and every reference should be cited in the text.
+- AI writing tools may be used for polishing, but you are responsible for correctness, citations, and final wording. Do not fabricate papers, results, datasets, or citations.
+
+### Suggested Structure
+
+One common structure is to organize the review around **Introduction** and **Related Works**.
+A stronger review may add sections such as taxonomy, methods, datasets, evaluation, limitations,
+and future directions, but the logic should remain easy to follow.
+
+In the **Introduction**, tell the big story of the subfield. A good introduction usually answers:
+
+1. Why is the problem important?
+2. Why is the problem hard?
+3. Why has it not been solved before?
+4. What are the main research lines or representative methods?
+5. What criteria will you use to compare the papers?
+6. What is significant or worthy about recent progress?
+7. How does this subfield fit into the broader picture of general AI systems?
+
+The final paragraph or subsection of the Introduction is usually a short summary of the review's
+organization and main observations.
+
+In the **Related Works** section, do not simply list papers one by one. Organize papers by problem,
+method, assumption, dataset, evaluation protocol, or historical development. The reader should
+learn how the methods differ from previous work, what assumptions they share, and what each line
+of work contributes to the field.
+
+### Comparison and Analysis
+
+Your review should include at least one table or figure that helps the reader compare the papers.
+Possible choices include:
+
+- A chronology of important papers and milestones;
+- A taxonomy table comparing problem settings, input-output formats, model architecture, supervision, data scale, and evaluation tasks;
+- A method diagram redrawn in your own style;
+- A comparison of datasets, metrics, or experimental protocols;
+- A summary of open problems and which papers address them.
+
+After the summary, include your own analysis. Discuss limitations, unresolved questions, and at
+least two concrete future research directions. It is acceptable to raise questions that you cannot
+fully answer yet, but they should be specific and grounded in the papers you read.
+
+### Tips for Finding Related Works
+
+1. Given a paper, read its cited papers to expand your paper library.
+2. Given a paper, read papers that cite it using Google Scholar, Semantic Scholar, or arXiv.
+3. For the first authors, senior authors, or labs in your paper library, check their homepages, Google Scholar pages, and lab websites for recent follow-up work.
+4. Prefer papers from top venues, influential workshops, widely used benchmarks, or systems with released code/data, but do not rely on popularity alone.
+5. Keep notes on each paper's problem, key idea, evidence, limitation, and relation to the other papers before writing the final review.
+
+### Sample Surveys and Reading Aids
+
+These examples are not templates to copy, but they show how a survey can organize a field and
+compare lines of work:
+
+1. [Dark, Beyond Deep: A Paradigm Shift to Cognitive AI with Humanlike Common Sense](https://doi.org/10.1016/j.eng.2020.08.013)
+2. [Transformers in Vision: A Survey](https://arxiv.org/abs/2101.01169)
+3. [Deep Learning for 3D Point Clouds: A Survey](https://arxiv.org/abs/1912.12033)
+4. [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223)
+5. [A Survey on Large Language Model based Autonomous Agents](https://arxiv.org/abs/2308.11432)
+
+### Submission
+
+- **Files:** Submit `LiteratureReview_StudentID_Name.pdf`, the source `.tex` file, and the `.bib` file. If figures are not embedded in the `.tex`, include the figure files as well.
+- **Deadline:** August 2, 23:59.
+- **Platform:** Submit through **Tsinghua University Web Learning（清华网络学堂）**.
