@@ -1,14 +1,10 @@
 # Paper Reading List · 通用人工智能系统平台I
 
-Every listed paper has a direct link. Prefer the **Required** papers for reading reports; use
-**Optional** papers when approved for the course.
+Reading Report Format
 
-## Reading Report Format
-
-- Choose one required paper or one course-approved optional paper.
+- Choose at least one required / optional paper.
 - Write a 2-4 page LaTeX report in English or Chinese.
-- Include: problem background, main method, experiment design, limitations, and one possible
-  improvement or follow-up experiment.
+- Include: problem background, main method, experiment design, limitations, and one possible improvement or follow-up experiment.
 - Submit the `.tex`, compiled PDF, and any reproduction code through the course repository.
 
 ## Shared Foundations
@@ -39,8 +35,8 @@ This direction connects the development of pretrained language models with their
 
 ### Required
 
-These papers trace the shift from contextual word representations to the three main Transformer paradigms: encoder-only understanding, decoder-only generation, and encoder-decoder text-to-text modeling. 
-**Suggested report themes:** compare their pretraining objectives, attention masks, representations, and downstream interfaces. 
+These papers trace the shift from contextual word representations to the three main Transformer paradigms: encoder-only understanding, decoder-only generation, and encoder-decoder text-to-text modeling.
+**Suggested report themes:** compare their pretraining objectives, attention masks, representations, and downstream interfaces.
 
 - Peters et al., 2018, [**Deep Contextualized Word Representations**](https://aclanthology.org/N18-1202/) (ELMo: contextualized token representations).
 - Devlin et al., 2019, [**BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding**](https://aclanthology.org/N19-1423/) (encoder-only masked language modeling).
@@ -51,8 +47,8 @@ These papers trace the shift from contextual word representations to the three m
 
 #### Text classification and representation learning
 
-This route studies how pretrained Transformers support token-level prediction, sentence classification, and dense sentence representations. 
-**Suggested report themes:** compare a linear-softmax head with a CRF decoder, analyze the effects of RoBERTa's pretraining choices, or compare supervised and unsupervised sentence-embedding objectives. 
+This route studies how pretrained Transformers support token-level prediction, sentence classification, and dense sentence representations.
+**Suggested report themes:** compare a linear-softmax head with a CRF decoder, analyze the effects of RoBERTa's pretraining choices, or compare supervised and unsupervised sentence-embedding objectives.
 **Reproduction tasks:** run BERT-based slot filling or NER with softmax and CRF heads on the same split, or evaluate Sentence-BERT and SimCSE on semantic textual similarity and retrieval with the same metric.
 
 - Chen, Zhuo, and Wang, 2019, [**BERT for Joint Intent Classification and Slot Filling**](https://arxiv.org/abs/1902.10909) (a Transformer encoder with a linear-softmax, or conditional maximum-entropy, head for token-level slot labeling).
@@ -64,7 +60,7 @@ This route studies how pretrained Transformers support token-level prediction, s
 #### Scaling, adaptation, and alignment
 
 This route asks how model capability changes with scale, how pretrained models can be adapted efficiently, and how their behavior can be aligned with human instructions and preferences.
-**Suggested report themes:** contrast parameter scaling with data scaling, full fine-tuning with LoRA, or RLHF with DPO. 
+**Suggested report themes:** contrast parameter scaling with data scaling, full fine-tuning with LoRA, or RLHF with DPO.
 **Reproduction tasks:** measure zero-/one-/few-shot sensitivity across at least three prompt variants, ablate LoRA rank or training-set size, or compare supervised fine-tuning and DPO using the same compact base model and evaluation set.
 
 - Brown et al., 2020, [**Language Models are Few-Shot Learners**](https://arxiv.org/abs/2005.14165) (in-context learning at scale).
@@ -76,7 +72,7 @@ This route asks how model capability changes with scale, how pretrained models c
 #### Reasoning, retrieval, and tool use
 
 This route studies how language models access external knowledge, expose or sample intermediate reasoning steps, call tools, and acquire reasoning behavior through reinforcement learning.
-**Suggested report themes:** separate retrieval failures from generation failures, compare chain-of-thought with self-consistency, or contrast prompted, tool-augmented, and RL-trained reasoning. 
+**Suggested report themes:** separate retrieval failures from generation failures, compare chain-of-thought with self-consistency, or contrast prompted, tool-augmented, and RL-trained reasoning.
 **Reproduction tasks:** build a compact RAG pipeline and report retrieval recall and answer accuracy separately, or compare direct answering，chain-of-thought, and self-consistency on a fixed subset of a reasoning benchmark with several random seeds.
 
 - Lewis et al., 2020, [**Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks**](https://arxiv.org/abs/2005.11401) (retrieval with parametric and non-parametric memory).
