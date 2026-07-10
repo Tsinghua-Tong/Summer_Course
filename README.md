@@ -61,4 +61,5 @@ site/
 archive/
   LearningList_BIGAI_2023.pdf
   PaperReadingList_BIGAI_2025.pdf
+  Report_Template_for_Tong_Summer_Course.zip
 ```

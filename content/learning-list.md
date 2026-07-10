@@ -261,6 +261,7 @@ What is still missing?**
 - Choose one subdirection from the course, such as vision-language models, diffusion models, 3D vision, cognitive reasoning, embodied manipulation, robot foundation models, language-model alignment, retrieval-augmented generation, LLM agents, multi-agent systems, or social simulation.
 - Read at least **5 closely related papers** in that subdirection. You may use the course paper-reading list as a starting point, and you are strongly encouraged to read more papers when the topic requires it.
 - Write a literature review in **LaTeX** and submit the compiled PDF together with the source `.tex` file and bibliography file.
+- **Template:** [Download the LaTeX literature-review template](https://github.com/Tsinghua-Tong/Summer_Course/raw/main/archive/Report_Template_for_Tong_Summer_Course.zip).
 - The review should be **4-6 pages**, excluding references and appendices. Use a standard conference-style template such as NeurIPS, ICML, ICLR, CVPR, ACL, or a clean article template with 10-11 pt font.
 - The review may be written in English or Chinese, but the writing must be coherent, citation-grounded, and not a collection of paper summaries.
 - Include a complete reference list. Every paper discussed in the text must be cited, and every reference should be cited in the text.
