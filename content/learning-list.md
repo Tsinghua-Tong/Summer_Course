@@ -21,7 +21,11 @@ Except for a short in-person session in Room 2201 on the afternoon of July 14, s
 1. **Archive homework: LaTeX CV** (5%)
    - **Requirements:** Export your personal CV as a PDF named `<your_name>_CV.pdf` and upload it to [`Tsinghua-Tong/2025-CV`](https://github.com/Tsinghua-Tong/2025-CV). Keep the CV within three pages. It may be written in Chinese or English, with flexible layout and typography. It must include at least a self-introduction, education background, honors and awards, personal skills, and research interests. The emphasis is on mastering LaTeX; grading will focus on completeness, correctness, and visual quality rather than the specific CV content.
    - **Template references:** [Overleaf CV templates](https://www.overleaf.com/gallery/tagged/cv). You may also use open-source CV templates from GitHub as references and replace publication-heavy sections with course projects or other relevant experience.
-   - **Submission:** Upload `<your_name>_CV.pdf` to the designated GitHub repository.
+   - **Submission:** Submit `<your_name>_CV.pdf` to the designated GitHub repository using the "Fork + Pull Request" workflow:
+      - Fork the repository to your own GitHub account and clone your fork or edit it directly on GitHub.
+      - Add your PDF to the designated submission directory and commit the file to your fork.
+      - Open a Pull Request from your fork to the original repository.
+      - Make sure the Pull Request includes only your own submission and does not modify or delete other students' files. The assignment is considered submitted only after the Pull Request has been created successfully.
    - **Deadline:** July 14, 23:59.
    - **Optional bonus:** Create a publicly accessible personal website by July 17, 23:59, preferably using GitHub Pages with a `.github.io` address. Up to 2 bonus points may be awarded.
 
